@@ -105,7 +105,19 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" id="portfolio-grid-container">
+                    
+                    <!-- Portfolio COVER TEMPLATE -->
+                    <template id="portfolio-card-template">
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fa-solid fa-eye"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                            </div>
+                        </div>
+                    </template>
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
@@ -334,289 +346,343 @@
 
 
         <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title -->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" translatable-text="project-6-title">Rupture</h2>
-                                    <!-- Icon Divider (Star)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
+        <div id="portfolio-modals">
+            <!-- Portfolio TEMPLATE -->
+            <template id="portfolio-modal-template">
+                <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                            <div class="modal-body text-center pb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <!-- Portfolio Modal - Title -->
+                                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="project-title">Rupture</h2>
+                                            <!-- Icon Divider (Star)-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!-- Subtitle -->
+                                            <h3 class="text-secondary text-uppercase" id="project-subtitle">Un jeu vidéo impactant sur le thème du Développement Durable</h3>
+                                            <!-- Icon Divider (Time)-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                                <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <!-- Date -->
+                                            <h3 class="text-secondary text-uppercase" id="project-date">Janvier - Juin 2024</h3>
+                                            <!-- Portfolio Modal - Image-->
+                                            <!-- <img class="img-fluid rounded mb-5 mt-4" src="assets/img/portfolio/cabin.png" alt="..." /> -->
+                                            <div class="portfolio-modal-carousel mb-5 mt-4" src="assets/img/portfolio/cabin.png" alt="...">
+                                            </div>
+
+                                            <!-- Portfolio Modal - Text-->
+                                            <p class="mb-4" translatable-text="project-6-description-1"></p>
+                                            <div class="divider-custom"><div class="divider-custom-line"></div></div>
+                                            <p class="mb-4" translatable-text="project-6-description-2"></p>
+
+                                            <a class="btn btn-primary disabled" href="#!" id="project-button-download">
+                                                <i class="fa-solid fa-download me-1"></i>
+                                                Lire le rapport
+                                            </a>
+                                            <button class="btn btn-secondary" data-bs-dismiss="modal" translatable-text="projects-button-close">
+                                                <i class="fas fa-xmark fa-fw"></i>
+                                                Retour
+                                            </button>
+                                        </div>
                                     </div>
-                                    <!-- Subtitle -->
-                                    <h3 class="text-secondary text-uppercase" translatable-text="project-6-subtitle">Un jeu vidéo impactant sur le thème du Développement Durable</h3>
-                                    <!-- Icon Divider (Time)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
-                                        <div class="divider-custom-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- Portfolio Modal 1 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title -->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" translatable-text="project-6-title">Rupture</h2>
+                                        <!-- Icon Divider (Star)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Subtitle -->
+                                        <h3 class="text-secondary text-uppercase" translatable-text="project-6-subtitle">Un jeu vidéo impactant sur le thème du Développement Durable</h3>
+                                        <!-- Icon Divider (Time)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Date -->
+                                        <h3 class="text-secondary text-uppercase" translatable-text="project-6-date">Janvier - Juin 2024</h3>
+                                        <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-5 mt-4" src="assets/img/portfolio/cabin.png" alt="..." />
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-4" translatable-text="project-6-description-1"><strong>Rupture</strong> est un projet réalisé par un groupe de 4 étudiants dans le cadre d'une formation en tant qu'ingénieur du numérique à Télécom SudParis.</p>
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <p class="mb-4" translatable-text="project-6-description-2">Dans ce jeu à style narratif, vous incarnez le point de vue d'un humble robot constatant le statut de la société se plaçant dans un futur proche. Alors que votre simple mission est de rendre service à un jeune couple, votre tâche se métamorphose alors de manière imprévue, en une bien plus importante qu'un simple divertissement.</p>
+                                        <a class="btn btn-primary disabled" href="#!" translatable-text="project-6-button-download">
+                                            <i class="fa-solid fa-download me-1"></i>
+                                            Lire le rapport
+                                        </a>
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal" translatable-text="projects-button-close">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Retour
+                                        </button>
                                     </div>
-                                    <!-- Date -->
-                                    <h3 class="text-secondary text-uppercase" translatable-text="project-6-date">Janvier - Juin 2024</h3>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 mt-4" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4" translatable-text="project-6-description-1"><strong>Rupture</strong> est un projet réalisé par un groupe de 4 étudiants dans le cadre d'une formation en tant qu'ingénieur du numérique à Télécom SudParis.</p>
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <p class="mb-4" translatable-text="project-6-description-2">Dans ce jeu à style narratif, vous incarnez le point de vue d'un humble robot constatant le statut de la société se plaçant dans un futur proche. Alors que votre simple mission est de rendre service à un jeune couple, votre tâche se métamorphose alors de manière imprévue, en une bien plus importante qu'un simple divertissement.</p>
-                                    <p class="mb-4" translatable-text="project-6-description-3">L'objectif primaire de ce projet était notamment d'apprendre à utiliser le moteur UnrealEngine 5 pour créer un jeu vidéo impactant sur le thème du Développement Durable.</p>
-                                    <p class="mb-4" translatable-text="project-6-description-4">Le rapport de notre projet sera bientôt disponible.</p>
-                                    <a class="btn btn-primary disabled" href="#!" translatable-text="project-6-button-download">
-                                        <i class="fa-solid fa-download me-1"></i>
-                                        Lire le rapport
-                                    </a>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal" translatable-text="projects-button-close">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Retour
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Shipping Time</h2>
-                                    <!-- Icon Divider (Star)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
+            <!-- Portfolio Modal 2-->
+            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Shipping Time</h2>
+                                        <!-- Icon Divider (Star)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Subtitle -->
+                                        <h3 class="text-secondary text-uppercase">Contrôlez le temps autant que la météo dans ce jeu de rythme à réaction</h3>
+                                        <!-- Icon Divider (Time)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Date -->
+                                        <h3 class="text-secondary text-uppercase">Avril 2024</h3>
+                                        <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/shippingTime.png" alt="..." />
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-4">Développé en 48h durant l'évènement <a href="https://gate.wp.telecom-sudparis.eu/projet/int-game-jam/"><strong>INT Game Jam 2024</strong></a> qui a été géré de façon autonome par un groupe de 9 étudiants, <strong>Shipping Time</strong> a été pensé et conçu par une équipe de 5 jammeurs dans le thème de cette année "Jouer avec le temps".</p>
+                                        <p class="mb-4">Dans ce jeu de rythme à réaction, vous incarnez un bateau qui doit contrôler le temps autant que la météo pour livrer des colis à temps.</p>
+                                        <p class="mb-4">Ayant eu quelques difficultés techniques, le jeu n'a pas pu être achevé comme nous l'avons souhaité, mais malgré quelques bugs, nous avons été satisfaits d'un jeu ayant une boucle de jeu terminée et qui correspondait au global à ce qu'on attendait.</p>
+                                        <a class="btn btn-primary" href="https://adrikat-1.itch.io/shipping-time">
+                                            <i class="fa-solid fa-magnifying-glass me-1"></i>
+                                            Page du projet (Itch.io)
+                                        </a>
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Retour
+                                        </button>
                                     </div>
-                                    <!-- Subtitle -->
-                                    <h3 class="text-secondary text-uppercase">Contrôlez le temps autant que la météo dans ce jeu de rythme à réaction</h3>
-                                    <!-- Icon Divider (Time)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Date -->
-                                    <h3 class="text-secondary text-uppercase">Avril 2024</h3>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/shippingTime.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Développé en 48h durant l'évènement <a href="https://gate.wp.telecom-sudparis.eu/projet/int-game-jam/"><strong>INT Game Jam 2024</strong></a> qui a été géré de façon autonome par un groupe de 9 étudiants, <strong>Shipping Time</strong> a été pensé et conçu par une équipe de 5 jammeurs dans le thème de cette année "Jouer avec le temps".</p>
-                                    <p class="mb-4">Dans ce jeu de rythme à réaction, vous incarnez un bateau qui doit contrôler le temps autant que la météo pour livrer des colis à temps.</p>
-                                    <p class="mb-4">Ayant eu quelques difficultés techniques, le jeu n'a pas pu être achevé comme nous l'avons souhaité, mais malgré quelques bugs, nous avons été satisfaits d'un jeu ayant une boucle de jeu terminée et qui correspondait au global à ce qu'on attendait.</p>
-                                    <a class="btn btn-primary" href="https://adrikat-1.itch.io/shipping-time">
-                                        <i class="fa-solid fa-magnifying-glass me-1"></i>
-                                        Page du projet (Itch.io)
-                                    </a>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Retour
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">The Legend Of Blo : the voice in your head</h2>
-                                    <!-- Icon Divider (Star)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
+            <!-- Portfolio Modal 3-->
+            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">The Legend Of Blo : the voice in your head</h2>
+                                        <!-- Icon Divider (Star)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Subtitle -->
+                                        <h3 class="text-secondary text-uppercase">Arrivez au bout de votre quête tout en supportant un narrateur chevronné</h3>
+                                        <!-- Icon Divider (Time)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Date -->
+                                        <h3 class="text-secondary text-uppercase">Janvier 2024</h3>
+                                        <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/theLegendOfBlo.png" alt="..." />
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-4">Développé en 48h durant la <a href="https://gate.wp.telecom-sudparis.eu/projet/int-game-jam/"><strong>Global Game Jam 2024</strong></a>, c'est une équipe de 6 étudiants qui a donné naissance à <strong>The Legend Of Blo : the voice in your head</strong>. Un jeu fourré de bugs (intentionnels ?) orienté narratif où un narrateur plutôt spécial vous accompagne dans votre quête. Ce jeu a été donc réalisé face au thème de l'année "Make me laugh".</p>
+                                        <p class="mb-4">Le projet a été très amusant à produire, nous avons beaucoup rigolé avec toute l'équipe durant le développement de ce jeu. Allant des bugs intentionnels aux non-intentionnels, les rires circulaient sur la table. Nous avons donc appris à reconnaître une chose importante ce jour là : ce n'est pas un bug, c'est une feature !</p>
+                                        <p class="mb-4">Nous avons été très fier du jeu à son état final. Je suis personnellement très fier d'avoir réussi à monter le système de dialogue modulaire pour ce jeu.</p>
+                                        <a class="btn btn-primary" href="https://valt7.itch.io/legendblo">
+                                            <i class="fa-solid fa-magnifying-glass me-1"></i>
+                                            Page du projet (Itch.io)
+                                        </a>
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Retour
+                                        </button>
                                     </div>
-                                    <!-- Subtitle -->
-                                    <h3 class="text-secondary text-uppercase">Arrivez au bout de votre quête tout en supportant un narrateur chevronné</h3>
-                                    <!-- Icon Divider (Time)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Date -->
-                                    <h3 class="text-secondary text-uppercase">Janvier 2024</h3>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/theLegendOfBlo.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Développé en 48h durant la <a href="https://gate.wp.telecom-sudparis.eu/projet/int-game-jam/"><strong>Global Game Jam 2024</strong></a>, c'est une équipe de 6 étudiants qui a donné naissance à <strong>The Legend Of Blo : the voice in your head</strong>. Un jeu fourré de bugs (intentionnels ?) orienté narratif où un narrateur plutôt spécial vous accompagne dans votre quête. Ce jeu a été donc réalisé face au thème de l'année "Make me laugh".</p>
-                                    <p class="mb-4">Le projet a été très amusant à produire, nous avons beaucoup rigolé avec toute l'équipe durant le développement de ce jeu. Allant des bugs intentionnels aux non-intentionnels, les rires circulaient sur la table. Nous avons donc appris à reconnaître une chose importante ce jour là : ce n'est pas un bug, c'est une feature !</p>
-                                    <p class="mb-4">Nous avons été très fier du jeu à son état final. Je suis personnellement très fier d'avoir réussi à monter le système de dialogue modulaire pour ce jeu.</p>
-                                    <a class="btn btn-primary" href="https://valt7.itch.io/legendblo">
-                                        <i class="fa-solid fa-magnifying-glass me-1"></i>
-                                        Page du projet (Itch.io)
-                                    </a>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Retour
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Magic Circus</h2>
-                                    <!-- Icon Divider (Star)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
+            <!-- Portfolio Modal 4-->
+            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Magic Circus</h2>
+                                        <!-- Icon Divider (Star)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Subtitle -->
+                                        <h3 class="text-secondary text-uppercase">Guidez et coordonnez vos unités pour capturer le drappeau grâce à leurs compétences spéciales</h3>
+                                        <!-- Icon Divider (Time)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Date -->
+                                        <h3 class="text-secondary text-uppercase">Novembre 2023 - Janvier 2024</h3>
+                                        <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/magicCircus.png" alt="..." />
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-4">Ce projet a été réalisé en duo dans le cadre de notre deuxième année d'école d'ingénieur du numérique, dans le cours d'Architectures et Moteurs de Jeux Vidéos à Télécom SudParis. La création de ce jeu nous a permis de prouver nos compétences en matière d'utilisation du moteur Unity pour créer un jeu simple présentant une qualité minimale.</p>
+                                        <p class="mb-4">Pour son développement, nous avons du associer nos expériences passées avec Unity avec la découverte de nouveaux outils permise par le module proposé par notre école (notamment le Nav-Mesh qui permet la navigation d'un ordinateur sur un terrain).</p>
+                                        <a class="btn btn-primary" href="https://github.com/AdriKat2022/AMJV-CTF">
+                                            <i class="fa-solid fa-magnifying-glass me-1"></i>
+                                            Page du projet (Github)
+                                        </a>
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Retour
+                                        </button>
                                     </div>
-                                    <!-- Subtitle -->
-                                    <h3 class="text-secondary text-uppercase">Guidez et coordonnez vos unités pour capturer le drappeau grâce à leurs compétences spéciales</h3>
-                                    <!-- Icon Divider (Time)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Date -->
-                                    <h3 class="text-secondary text-uppercase">Novembre 2023 - Janvier 2024</h3>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/magicCircus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Ce projet a été réalisé en duo dans le cadre de notre deuxième année d'école d'ingénieur du numérique, dans le cours d'Architectures et Moteurs de Jeux Vidéos à Télécom SudParis. La création de ce jeu nous a permis de prouver nos compétences en matière d'utilisation du moteur Unity pour créer un jeu simple présentant une qualité minimale.</p>
-                                    <p class="mb-4">Pour son développement, nous avons du associer nos expériences passées avec Unity avec la découverte de nouveaux outils permise par le module proposé par notre école (notamment le Nav-Mesh qui permet la navigation d'un ordinateur sur un terrain).</p>
-                                    <a class="btn btn-primary" href="https://github.com/AdriKat2022/AMJV-CTF">
-                                        <i class="fa-solid fa-magnifying-glass me-1"></i>
-                                        Page du projet (Github)
-                                    </a>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Retour
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Translimation</h2>
-                                    <!-- Icon Divider (Star)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
+            <!-- Portfolio Modal 5-->
+            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Translimation</h2>
+                                        <!-- Icon Divider (Star)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Subtitle -->
+                                        <h3 class="text-secondary text-uppercase">Incarnez un petit slime dans tous ses états</h3>
+                                        <!-- Icon Divider (Time)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Date -->
+                                        <h3 class="text-secondary text-uppercase">Novembre 2023</h3>
+                                        <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/translimation.png" alt="..." />
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-4">Ce jeu a été réalisé en 48 heures à l'occasion de l'évènement <a href="https://itch.io/jam/unijam2023"><strong>Unijam FR 2023</strong></a> avec le thème de cette année "Tout se tranforme".</p>
+                                        <p class="mb-4">L'idée que nous avons eu a été alors d'incarner un petit slime de laboratoire où son but est de se forger sa propre liberté en s'échappant du labo. Mais un slime ça colle, et ça ne saute pas haut. Pas de panique, il existe des sources de chaleur et de froid qui altereront votre état. Chaque état a ses avantages et ses inconvénients ! Mais attention à ne pas prendre trop de temps : chaque salle a sa propre température, et elle vous ramènera constament au même état après un certain temps.</p>
+                                        <a class="btn btn-primary" href="https://miloderoussi.itch.io/translimation">
+                                            <i class="fa-solid fa-magnifying-glass me-1"></i>
+                                            Page du projet (Itch.io)
+                                        </a>
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Retour
+                                        </button>
                                     </div>
-                                    <!-- Subtitle -->
-                                    <h3 class="text-secondary text-uppercase">Incarnez un petit slime dans tous ses états</h3>
-                                    <!-- Icon Divider (Time)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Date -->
-                                    <h3 class="text-secondary text-uppercase">Novembre 2023</h3>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/translimation.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Ce jeu a été réalisé en 48 heures à l'occasion de l'évènement <a href="https://itch.io/jam/unijam2023"><strong>Unijam FR 2023</strong></a> avec le thème de cette année "Tout se tranforme".</p>
-                                    <p class="mb-4">L'idée que nous avons eu a été alors d'incarner un petit slime de laboratoire où son but est de se forger sa propre liberté en s'échappant du labo. Mais un slime ça colle, et ça ne saute pas haut. Pas de panique, il existe des sources de chaleur et de froid qui altereront votre état. Chaque état a ses avantages et ses inconvénients ! Mais attention à ne pas prendre trop de temps : chaque salle a sa propre température, et elle vous ramènera constament au même état après un certain temps.</p>
-                                    <a class="btn btn-primary" href="https://miloderoussi.itch.io/translimation">
-                                        <i class="fa-solid fa-magnifying-glass me-1"></i>
-                                        Page du projet (Itch.io)
-                                    </a>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Retour
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ExplodingTree</h2>
-                                    <!-- Icon Divider (Star)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
+            <!-- Portfolio Modal 6-->
+            <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ExplodingTree</h2>
+                                        <!-- Icon Divider (Star)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Subtitle -->
+                                        <h3 class="text-secondary text-uppercase">Défendez l'arbre sacré dans ce tower défense où git à eu raison de nous</h3>
+                                        <!-- Icon Divider (Time)-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Date -->
+                                        <h3 class="text-secondary text-uppercase">Février 2023</h3>
+                                        <!-- Portfolio Modal - Image-->
+                                        <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/explodingTree.png" alt="..." />
+                                        <!-- Portfolio Modal - Text-->
+                                        <p class="mb-4">Ce jeu a été réalisé en 48 heures dans une équipe de 6 à l'occasion de la <a href="https://itch.io/jam/unijam2023"><strong>Global Game Jam 2023</strong></a> avec le thème de cette année "Roots".</p>
+                                        <p class="mb-4">Cette game jam a été la première pour toute l'équipe. L'utilisation de GIT (logiciel de gestion de version de fichier, indispensable pour travailler en équipe) était également nouvelle à ce temps. C'est à ce moment là que nous avons commencé à le prendre en main.</p>
+                                        <p class = "mb-4">Le jeu n'a finalement pas pu aboutir, car trop de problèmes avaient été rencontrés avec GIT. Malheureusement, à cet époque, nous ne connaissions pas assez les méthodes pour s'en sortir, mais il est intéressant de remarquer que, restrospectivement à aujourd'hui, nous aurions pu corriger le problème d'avant avec notre maîtrise actuelle.</p>
+                                        <a class="btn btn-danger disabled">
+                                            <i class="fa-solid fa-ban me-1"></i>
+                                            Page du projet (Itch.io)
+                                        </a>
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Retour
+                                        </button>
                                     </div>
-                                    <!-- Subtitle -->
-                                    <h3 class="text-secondary text-uppercase">Défendez l'arbre sacré dans ce tower défense où git à eu raison de nous</h3>
-                                    <!-- Icon Divider (Time)-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-clock"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Date -->
-                                    <h3 class="text-secondary text-uppercase">Février 2023</h3>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5 mt-4" src="assets/portfolio/explodingTree.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Ce jeu a été réalisé en 48 heures dans une équipe de 6 à l'occasion de la <a href="https://itch.io/jam/unijam2023"><strong>Global Game Jam 2023</strong></a> avec le thème de cette année "Roots".</p>
-                                    <p class="mb-4">Cette game jam a été la première pour toute l'équipe. L'utilisation de GIT (logiciel de gestion de version de fichier, indispensable pour travailler en équipe) était également nouvelle à ce temps. C'est à ce moment là que nous avons commencé à le prendre en main.</p>
-                                    <p class = "mb-4">Le jeu n'a finalement pas pu aboutir, car trop de problèmes avaient été rencontrés avec GIT. Malheureusement, à cet époque, nous ne connaissions pas assez les méthodes pour s'en sortir, mais il est intéressant de remarquer que, restrospectivement à aujourd'hui, nous aurions pu corriger le problème d'avant avec notre maîtrise actuelle.</p>
-                                    <a class="btn btn-danger disabled">
-                                        <i class="fa-solid fa-ban me-1"></i>
-                                        Page du projet (Itch.io)
-                                    </a>
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Retour
-                                    </button>
                                 </div>
                             </div>
                         </div>
