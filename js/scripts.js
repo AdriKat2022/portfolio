@@ -9,7 +9,8 @@
 
 const ProjectActionType = {
     DOWNLOAD: 'download',
-    LINK: 'link'
+    LINK: 'link',
+    UNAVAILABLE: 'unavailable'
 }
 
 const DEFAULT_LANGUAGE = 'fr';
@@ -63,7 +64,7 @@ const translations = {
         "project-rupture-subtitle": "Un jeu vidéo impactant sur le thème du Développement Durable",
         "project-rupture-description-1": "<p><strong>Rupture</strong> est un projet réalisé par un groupe de 4 étudiants dans le cadre d'une formation d'ingénieur du numérique à Télécom SudParis.</p>",
         "project-rupture-description-2": "<p>Dans ce jeu de type narratif, vous incarnez le point de vue d'un modeste robot observant l'état de la société dans un futur proche. Alors que votre mission simple est d'aider un jeune couple, votre tâche se métamorphose alors de manière inattendue en une mission bien plus importante que de simple divertissement.</p><p>L'objectif principal de ce projet était notamment d'apprendre à utiliser le moteur UnrealEngine 5 pour créer un jeu vidéo impactant sur le thème du Développement Durable.</p><p>Le rapport de notre projet est disponible.</p>",
-        "project-rupture-button-download": "<i class=\"fas fa-download me-2\"></i>Télécharger le rapport",
+        "project-rupture-action-button": "<i class=\"fas fa-download me-2\"></i>Télécharger le rapport",
     },
     /////////////////////////////////////////////////////////////////////////
     en: {
@@ -123,7 +124,7 @@ const projects = [
         cover_img: 'assets/img/portfolio/cabin.png',
         imgs: ['assets/img/portfolio/cabin.png', 'assets/img/portfolio/cake.png', 'assets/img/portfolio/circus.png'],
         // For example download the report
-        action: {type: 'download', link: 'assets/docs/rupture-report.pdf'}
+        action: {type: ProjectActionType.LINK, link: 'assets/docs/rupture-report.pdf'}
     }
 ];
 
@@ -176,11 +177,7 @@ const loadProjects = () => {
         // get the description element (id="project-description-2") and set the translatable text attribute
         const descriptionElement2 = modalElement.querySelector('#project-description-2');
         descriptionElement2.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-description-2`];
-        descriptionElement2.setAttribute('translatable-text',`project-${project.id}-description-2`); 
-        // get the button element (id="project-button-download") and set the translatable text attribute
-        const buttonElement = modalElement.querySelector('#project-button-download');
-        buttonElement.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-button-download`];
-        buttonElement.setAttribute('translatable-text',`project-${project.id}-button-download`);
+        descriptionElement2.setAttribute('translatable-text',`project-${project.id}-description-2`);
         // Add the images to the modal
         const carousel = modalElement.querySelector('.carousel-inner');
 
@@ -196,6 +193,16 @@ const loadProjects = () => {
             }
             carousel.appendChild(carouselItem);
         });
+
+        projectBody = modalElement.querySelector('#project-body');
+
+        // Get the template corresponding to the project action type
+        const buttonTemplate = modalElement.querySelector('#project-button-' + project.action.type);
+        buttonNode = buttonTemplate.content.cloneNode(true);
+        button = buttonNode.querySelector('.btn');
+        button.setAttribute('href', project.action.link);
+        button.setAttribute('translatable-text', 'project-' + project.id + '-action-button');
+        projectBody.appendChild(button);
 
         // Add the modal to the modals container
         portfolioModals.appendChild(modal);

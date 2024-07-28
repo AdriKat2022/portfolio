@@ -340,14 +340,14 @@
         <div id="portfolio-modals">
             <!-- Portfolio TEMPLATE -->
             <template id="portfolio-modal-template">
-                <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+                <div class="portfolio-modal modal fade" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
                             <div class="modal-body text-center pb-5">
                                 <div class="container">
                                     <div class="row justify-content-center">
-                                        <div class="col-lg-8">
+                                        <div id="project-body" class="col-lg-8">
                                             <!-- Portfolio Modal - Title -->
                                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="project-title">Rupture</h2>
                                             <!-- Icon Divider (Star)-->
@@ -365,8 +365,8 @@
                                                 <div class="divider-custom-line"></div>
                                             </div>
                                             <!-- Date -->
-                                            <h3 class="text-secondary text-uppercase" id="project-date">Janvier - Juin 2024</h3>
-                                            <!-- Portfolio Modal - Image-->
+                                            <h3 class="text-secondary text-uppercase mb-5" id="project-date">Janvier - Juin 2024</h3>
+                                            <!-- Portfolio Modal - CAROUSEL (DOESN'T WORK) -->
                                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                                 <div class="carousel-inner">
                                                   <div class="carousel-item active">
@@ -387,17 +387,32 @@
                                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                   <span class="sr-only">Next</span>
                                                 </a>
-                                              </div>
+                                            </div>
 
-                                            <!-- Portfolio Modal - Text-->
-                                            <p class="mb-4" id="project-description-1"></p>
+                                            <!-- Portfolio Modal - Text -->
+                                            <p class="mt-3 mb-4" id="project-description-1"></p>
                                             <div class="divider-custom"><div class="divider-custom-line"></div></div>
                                             <p class="mb-4" id="project-description-2"></p>
 
-                                            <a class="btn btn-primary disabled" href="#!" id="project-button-download">
-                                                <i class="fa-solid fa-download me-1"></i>
-                                                Lire le rapport
-                                            </a>
+                                            <template id="project-button-download">
+                                                <a class="btn btn-primary" href="#!">
+                                                    <i class="fa-solid fa-download me-1"></i>
+                                                    Lire le rapport
+                                                </a>
+                                            </template>
+                                            <template id="project-button-link">
+                                                <a class="btn btn-primary" href="#!">
+                                                    <i class="fa-solid fa-link me-1"></i>
+                                                    Lire le rapport
+                                                </a>
+                                            </template>
+                                            <template id="project-button-unavailable">
+                                                <a class="btn btn-primary disabled" href="#!">
+                                                    <i class="fa-solid fa-forbid me-1"></i>
+                                                    Lire le rapport
+                                                </a>
+                                            </template>
+
                                             <button class="btn btn-secondary" data-bs-dismiss="modal" translatable-text="projects-button-close">
                                                 <i class="fas fa-xmark fa-fw"></i>
                                                 Retour
