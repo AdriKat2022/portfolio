@@ -7,6 +7,11 @@
 // Scripts
 // 
 
+const ProjectActionType = {
+    DOWNLOAD: 'download',
+    LINK: 'link'
+}
+
 const DEFAULT_LANGUAGE = 'fr';
 const LANGUAGE_NAME_ATTRIBUTE = 'translatable-text';
 const LANGUAGE_SELECTOR_ID = 'language-selector';
@@ -115,18 +120,16 @@ const translations = {
 const projects = [
     {
         id: 'rupture',
-        cover_img: 'assets/img/portfolio/rupture.jpg',
-        imgs: ['assets/img/portfolio/rupture.jpg'],
+        cover_img: 'assets/img/portfolio/cabin.png',
+        imgs: ['assets/img/portfolio/cabin.png', 'assets/img/portfolio/cake.png', 'assets/img/portfolio/circus.png'],
         // For example download the report
         action: {type: 'download', link: 'assets/docs/rupture-report.pdf'}
-    },
-
-
+    }
 ];
 
 
 const loadProjects = () => {
-    
+
     // Cover cards
     const portfolioContainer = document.getElementById('portfolio-grid-container');
     const cardTemplate = document.getElementById('portfolio-card-template');
@@ -140,7 +143,7 @@ const loadProjects = () => {
         const cardElement = card.querySelector('.portfolio-item');
         cardElement.id = `portfolio-item-${project.id}`;
         cardElement.setAttribute('data-bs-target', '#portfolio-modal-' + project.id);
-        const cardImg = cardElement.querySelector('.portfolio-image');
+        const cardImg = cardElement.querySelector('.img-fluid');
         cardImg.src = project.cover_img;
 
         // Add the card to the portfolio container
@@ -154,38 +157,44 @@ const loadProjects = () => {
         modalElement.setAttribute('aria-labelledby', 'portfolio-modal-' + project.id);
 
         // Get the text elements with their ids
-        // get the title element (id="project-title")
+        // get the title element (id="project-title") and set the translatable text attribute
         const titleElement = modalElement.querySelector('#project-title');
         titleElement.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-title`];
-        // get the date element (id="project-date")
+        titleElement.setAttribute('translatable-text',`project-${project.id}-title`);
+        // get the date element (id="project-date") and set the translatable text attribute
         const dateElement = modalElement.querySelector('#project-date');
         dateElement.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-date`];
-        // get the subtitle element (id="project-subtitle")
+        dateElement.setAttribute('translatable-text',`project-${project.id}-date`);
+        // get the subtitle element (id="project-subtitle") and set the translatable text attribute
         const subtitleElement = modalElement.querySelector('#project-subtitle');
         subtitleElement.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-subtitle`];
-        // get the description element (id="project-description-1")
+        subtitleElement.setAttribute('translatable-text',`project-${project.id}-subtitle`);
+        // get the description element (id="project-description-1") and set the translatable text attribute
         const descriptionElement1 = modalElement.querySelector('#project-description-1');
         descriptionElement1.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-description-1`];
-        // get the description element (id="project-description-2")
+        descriptionElement1.setAttribute('translatable-text',`project-${project.id}-description-1`);
+        // get the description element (id="project-description-2") and set the translatable text attribute
         const descriptionElement2 = modalElement.querySelector('#project-description-2');
         descriptionElement2.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-description-2`];
-        // get the button element (id="project-button-download")
+        descriptionElement2.setAttribute('translatable-text',`project-${project.id}-description-2`); 
+        // get the button element (id="project-button-download") and set the translatable text attribute
         const buttonElement = modalElement.querySelector('#project-button-download');
         buttonElement.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-button-download`];
-
+        buttonElement.setAttribute('translatable-text',`project-${project.id}-button-download`);
         // Add the images to the modal
-        const modalImages = modalElement.querySelector('.portfolio-modal-carousel');
+        const carousel = modalElement.querySelector('.carousel-inner');
+
         project.imgs.forEach((img, index) => {
             const carouselItem = document.createElement('div');
             carouselItem.classList.add('carousel-item');
             if (index === 0) {
                 carouselItem.classList.add('active');
             }
-            const imgElement = document.createElement('img');
-            imgElement.src = img;
-            imgElement.classList.add('d-block', 'w-100');
-            carouselItem.appendChild(imgElement);
-            modalImages.appendChild(carouselItem);
+            carouselItem.innerHTML = `<img src="${img}" class="d-block w-100" alt="...">`;
+            if (index === 0) {
+                carouselItem.classList.add('active');
+            }
+            carousel.appendChild(carouselItem);
         });
 
         // Add the modal to the modals container
@@ -215,10 +224,9 @@ const setLanguage = (language) => {
     });
 }
 
-setLanguage(DEFAULT_LANGUAGE);
 
 window.addEventListener('DOMContentLoaded', event => {
-
+    
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -230,15 +238,15 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
+        
     };
-
+    
     // Shrink the navbar 
     navbarShrink();
-
+    
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
-
+    
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
@@ -247,7 +255,7 @@ window.addEventListener('DOMContentLoaded', event => {
             rootMargin: '0px 0px -40%',
         });
     };
-
+    
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
@@ -260,7 +268,11 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
+    
+    // Load projects
+    loadProjects();
+    setLanguage(DEFAULT_LANGUAGE);
+    
 });
 
 // alert("This website is under construction. Please check back later.");
