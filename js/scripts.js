@@ -124,7 +124,7 @@ const projects = [
         cover_img: 'assets/img/portfolio/cabin.png',
         imgs: ['assets/img/portfolio/cabin.png', 'assets/img/portfolio/cake.png', 'assets/img/portfolio/circus.png'],
         // For example download the report
-        action: {type: ProjectActionType.LINK, link: 'assets/docs/rupture-report.pdf'}
+        action: {type: ProjectActionType.LINK, link: 'assets/doc/rupture-report.pdf'}
     }
 ];
 
