@@ -179,19 +179,21 @@ const loadProjects = () => {
         descriptionElement2.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-description-2`];
         descriptionElement2.setAttribute('translatable-text',`project-${project.id}-description-2`);
         // Add the images to the modal
-        const carousel = modalElement.querySelector('.carousel-inner');
+
+        //const carousel = modalElement.querySelector('.carousel-inner');
+        const carousel = modalElement.querySelector('#project-carousel');
 
         project.imgs.forEach((img, index) => {
-            const carouselItem = document.createElement('div');
-            carouselItem.classList.add('carousel-item');
-            if (index === 0) {
-                carouselItem.classList.add('active');
-            }
-            carouselItem.innerHTML = `<img src="${img}" class="d-block w-100" alt="...">`;
-            if (index === 0) {
-                carouselItem.classList.add('active');
-            }
-            carousel.appendChild(carouselItem);
+            // const carouselItem = document.createElement('div');
+            // carouselItem.classList.add('carousel-item');
+            // if (index === 0) {
+            //     carouselItem.classList.add('active');
+            // }
+            carousel.innerHTML += `<img src="${img}" class="d-block w-100" alt="...">`;
+            // if (index === 0) {
+            //     carouselItem.classList.add('active');
+            // }
+            // carousel.appendChild(carouselItem);
         });
 
         projectBody = modalElement.querySelector('#project-body');
