@@ -107,7 +107,7 @@ const translations = {
         "project-exploding-tree-subtitle": "Défendez l'arbre sacré dans ce tower défense où git à eu raison de nous",
         "project-exploding-tree-description-1": "Ce jeu a été réalisé en 48 heures dans une équipe de 6 à l'occasion de la <a href=\"https://itch.io/jam/unijam2023\"><strong>Global Game Jam 2023</strong></a> avec le thème de cette année \"Roots\".",
         "project-exploding-tree-description-2": "<p class=\"mb-4\">Cette game jam a été la première pour toute l'équipe. L'utilisation de GIT (logiciel de gestion de version de fichier, indispensable pour travailler en équipe) était également nouvelle à ce temps. C'est à ce moment là que nous avons commencé à le prendre en main.</p><p class = \"mb-4\">Le jeu n'a finalement pas pu aboutir, car trop de problèmes avaient été rencontrés avec GIT. Malheureusement, à cet époque, nous ne connaissions pas assez les méthodes pour s'en sortir, mais il est intéressant de remarquer que, restrospectivement à aujourd'hui, nous aurions pu corriger le problème d'avant avec notre maîtrise actuelle.</p>",
-        "project-exploding-tree-action-button-1": "Page du projet non disponible",
+        "project-exploding-tree-action-button-1": "Page du projet (Github)",
     },
     /////////////////////////////////////////////////////////////////////////
     en: {
@@ -198,7 +198,7 @@ const translations = {
         "project-exploding-tree-subtitle": "Defend the sacred tree in this tower defense where git got the best of us",
         "project-exploding-tree-description-1": "This game was created in 48 hours in a team of 6 during the <a href=\"https://itch.io/jam/unijam2023\"><strong>Global Game Jam 2023</strong></a> with this year's theme \"Roots\".",
         "project-exploding-tree-description-2": "<p class=\"mb-4\">This game jam was the first for the whole team. The use of GIT (file version management software, essential for working in a team) was also new at the time. It was at this moment that we started to take it in hand.</p><p class = \"mb-4\">The game finally could not be completed, because too many problems were encountered with GIT. Unfortunately, at that time, we did not know enough methods to get out of it, but it is interesting to note that, retrospectively to today, we could have corrected the previous problem with our current mastery.</p>",
-        "project-exploding-tree-action-button-1": "Project page not available",
+        "project-exploding-tree-action-button-1": "Project page (Github)",
     }
 }
 
@@ -251,7 +251,7 @@ const projects = [
         cover_img: 'assets/portfolio/explodingTreeCover.png',
         imgs: ['assets/portfolio/explodingTree.png'],
         actions: [
-            {type: ProjectActionType.UNAVAILABLE,   link: ''}
+            {type: ProjectActionType.LINK,   link: 'https://github.com/HugoLhuilier/ExplodingTree'}
         ]
     },
 ];
