@@ -13,6 +13,7 @@ const ProjectActionType = {
     UNAVAILABLE: 'unavailable'
 }
 
+const PROJECTS_JSON_FILENAME = 'assets/projects.json';
 const DEFAULT_LANGUAGE = 'fr';
 const LANGUAGE_NAME_ATTRIBUTE = 'translatable-text';
 const LANGUAGE_SELECTOR_ID = 'language-selector';
@@ -203,61 +204,7 @@ const translations = {
 }
 
 
-// Project loader
-const projects = [
-    {
-        id: 'rupture',
-        cover_img: 'assets/img/portfolio/cabin.png',
-        imgs: ['assets/img/portfolio/cabin.png', 'assets/img/portfolio/cake.png', 'assets/img/portfolio/circus.png'],
-        actions: [
-            {type: ProjectActionType.DOWNLOAD,      link: 'assets/doc/rupture-report.pdf'},
-            {type: ProjectActionType.LINK,          link: 'assets/doc/rupture-report.pdf'},
-        ]
-    },
-    {
-        id: 'shipping-time',
-        cover_img: 'assets/portfolio/shippingTimeCover.png',
-        imgs: ['assets/portfolio/shippingTime.png'],
-        actions: [
-            {type: ProjectActionType.LINK,          link: 'https://adrikat-1.itch.io/shipping-time'}
-        ]
-    },
-    {
-        id: 'the-legend-of-blo',
-        cover_img: 'assets/portfolio/theLegendOfBloCover.png',
-        imgs: ['assets/portfolio/theLegendOfBlo.png'],
-        actions: [
-            {type: ProjectActionType.LINK,          link: 'https://valt7.itch.io/legendblo'}
-        ]
-    },
-    {
-        id: 'magic-circus',
-        cover_img: 'assets/portfolio/magicCircusCover.png',
-        imgs: ['assets/portfolio/magicCircus.png'],
-        actions: [
-            {type: ProjectActionType.LINK,          link: 'https://github.com/AdriKat2022/AMJV-CTF'}
-        ]
-    },
-    {
-        id: 'translimation',
-        cover_img: 'assets/portfolio/translimationCover.png',
-        imgs: ['assets/portfolio/translimation.png'],
-        actions: [
-            {type: ProjectActionType.LINK,          link: 'https://miloderoussi.itch.io/translimation'}
-        ]
-    },
-    {
-        id: 'exploding-tree',
-        cover_img: 'assets/portfolio/explodingTreeCover.png',
-        imgs: ['assets/portfolio/explodingTree.png'],
-        actions: [
-            {type: ProjectActionType.LINK,   link: 'https://github.com/HugoLhuilier/ExplodingTree'}
-        ]
-    },
-];
-
-
-const loadProjects = () => {
+const loadProjects = (projects) => {
 
     // Cover cards
     const portfolioContainer = document.getElementById('portfolio-grid-container');
@@ -329,7 +276,8 @@ const loadProjects = () => {
         index = 1;
         buttonContainer = modalElement.querySelector('#project-buttons');
         project.actions.forEach(action => {
-            const buttonTemplate = modalElement.querySelector('#project-button-' + action.type);
+            console.log(action);
+            const buttonTemplate = modalElement.querySelector('#project-button-' + action.type.toLowerCase());
             buttonNode = buttonTemplate.content.cloneNode(true);
             button = buttonNode.querySelector('.btn');
             button.setAttribute('href', action.link);
@@ -413,8 +361,22 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
     
+    // Load JSON data from the root folder
+    fetch(PROJECTS_JSON_FILENAME)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(json_projects => {
+            // Use the JSON json_projects
+            console.log(json_projects); // For debugging
+            loadProjects(json_projects);
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+
     // Load projects
-    loadProjects();
     setLanguage(DEFAULT_LANGUAGE);
     
 });
