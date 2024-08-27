@@ -20,6 +20,9 @@ fetch(TEXTS_JSON_FILENAME).then(response => response.json()).then(data => {
 let all_projects = null;
 fetch(PROJECTS_JSON_FILENAME).then(response => response.json()).then(data => {
     all_projects = data;
+    return all_projects;
+}).then(projects => {
+    loadProjects(projects);
 });
 
 
@@ -181,8 +184,5 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
     
-    // Load projects
-    loadProjects(all_projects);
     setLanguage(DEFAULT_LANGUAGE);
-    
 });
