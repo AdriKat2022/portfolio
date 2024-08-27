@@ -40,6 +40,12 @@
 
         "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Fermer",
 
+        "project-find-mocha-title": "Find Mocha",
+        "project-find-mocha-date": "Depuis Novembre 2023",
+        "project-find-mocha-subtitle": "Un jeu de plateforme 2D où vous incarnez un ours mignon à la recherche de son ami",
+        "project-find-mocha-description-1": "<p><strong>Find Mocha</strong> a été mon projet personnel préféré jusqu'à présent. En effet, la motivation pour ce projet était au départ de le livrer en cadeau à un ami très proche. Cela explique d'ailleurs pourquoi la motivation de départ que j'avais pour celui-ci était si élevée.</p>",
+        "project-find-mocha-description-2": "<p>Dans ce petit jeu de plateforme tout code fait maison, vous incarnez un petit ours nommé Milk qui explore des montagnes sucrées pour retrouver son ami Mocha.</p><p>Divers types de powerups vous aideront dans votre voyage, mais attention aux monstres de mauvaises pensées !</p><p>Vous pouvez y jouer en téléchargeant le jeu sur GitHub.</p>",
+        "project-find-mocha-action-button-1": "Page du projet (GitHub)",
 
         "project-rupture-title": "Rupture",
         "project-rupture-date": "Janvier - Juin 2024",
@@ -124,6 +130,13 @@
         "contact-subtitle": "A question ? An internship or job offer in game or software dev ?<br/>Do not hesitate to contact me, I will answer you as soon as can !",
 
         "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Close",
+
+        "project-find-mocha-title": "Find Mocha",
+        "project-find-mocha-date": "From November 2023",
+        "project-find-mocha-subtitle": "An 2D platformer where you play as a cute bear looking for his friend",
+        "project-find-mocha-description-1": "<p><strong>Find Mocha</strong> has been my personal favourite project so far. In fact, the motivation for this project were at first to deliver it as a present to a very close friend. That may explain why the starting motivation I had for this one was that high.</p>",
+        "project-find-mocha-description-2": "<p>In this little platformer all code home-made, you play as a little bear named Milk that explores sweet mountains to find his friend Mocha.</p><p>Different types of powerups will help you through your journey, but beware of the bad thoughts monsters !</p><p>You can play by downloading the game on GitHub.</p>",
+        "project-find-mocha-action-button-1": "Project page (GitHub)",
 
         "project-rupture-title": "Rupture",
         "project-rupture-date": "January - June 2024",

@@ -1,14 +1,17 @@
 [
     {
         "id": "find-mocha",
-        "cover_img": "assets/img/portfolio/cabin.png",
+        "cover_img": "assets/portfolio/find_mocha_cover.png",
         "imgs": [
-            "assets/img/portfolio/circus.png"
+            "assets/portfolio/find_mocha_1.png",
+            "assets/portfolio/find_mocha_2.png",
+            "assets/portfolio/find_mocha_3.png",
+            "assets/portfolio/find_mocha_4.png"
         ],
         "actions": [
             {
                 "type": "LINK",
-                "link": "assets/doc/rupture-report.pdf"
+                "link": "https://github.com/AdriKat2022/find-mocha"
             }
         ]
     },
