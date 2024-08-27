@@ -17,11 +17,13 @@
     },
     {
         "id": "rupture",
-        "cover_img": "assets/img/portfolio/cabin.png",
+        "cover_img": "assets/portfolio/rupture_cover.png",
         "imgs": [
-            "assets/img/portfolio/cabin.png",
-            "assets/img/portfolio/cake.png",
-            "assets/img/portfolio/circus.png"
+            "assets/portfolio/rupture_1.png",
+            "assets/portfolio/rupture_2.png",
+            "assets/portfolio/rupture_3.png",
+            "assets/portfolio/rupture_4.png",
+            "assets/portfolio/rupture_5.png"
         ],
         "actions": [
             {
