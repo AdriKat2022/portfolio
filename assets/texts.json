@@ -1,19 +1,19 @@
 {
     "fr": {
         "last-updated": "Dernière mise à jour : ",
-
+        
         "job-title": "@AdriKat - Développeur",
         "job-subtitle": "Ingénieur du numérique - Développeur et concepteur de jeux - Développeur de logiciels",
         "nav-profile": "Profil",
-        "nav-portfolio": "Portfolio",
+        "nav-games": "Mes Jeux",
         "nav-about": "À propos",
         "nav-contact": "Contact",
         "title-profile": "Mon Profil",
-        "title-portfolio": "Mes Projets",
+        "title-games": "Mes Jeux",
         "title-about": "À propos",
         "title-contact": "Contact",
         "profile-subtitle": "Vous avez un projet en tête dans le domaine du game dev ou du software ?<br>N'hésitez pas à me contacter par mail ou par téléphone !",
-        
+
         "profile-column-1-head": "Maîtrise de multiples <strong>languages de programmation</strong> parmi...",
         "profile-column-1-1": "C++ (avec notamment <em>Unreal Engine 5</em>)",
         "profile-column-1-2": "C# (avec <em>Unity</em>)",
@@ -28,6 +28,9 @@
         "profile-column-2-2": "Suite Microsoft Office",
         "profile-column-2-3": "Suite Google",
         "profile-column-2-4": "Microsoft Office",
+
+        "portfolio-description": "Mon portfolio regorge de tous les projets auxquels j'ai participé, seul ou en équipe, durant mes études d'ingénieur du numérique à Télécom SudParis, en tant que projet scolaire ou personnel. Vous y trouverez principalement des jeux vidéo dans cette section !",
+        "portfolio-warning": "Attention : Si le chargement des projets ne s'est pas faite correctement, veuillez rafraîchir la page.",
         
         "about-p1": "Bonjour et bienvenue sur mon portfolio ! Je m'appelle Adrien Schroedel, passionné par le software et le game dev, j'ai tout naturellement intégré une école (Télécom SudParis) pour devenir ingénieur du numérique...<br/>Tout au long de ma formation, j'ai participé à de nombreux <a href=\"#portfolio\">projets de création de jeux vidéo</a>.",
         "about-p2": "Mon plaisir vient non seulement d'apporter mon expertise sur les moteurs de jeu les plus utilisés sur le marché, mais aussi de collaborer harmonieusement avec une équipe pluridisciplinaire pour offrir une œuvre digne du 10me art à tout type de publics.",
@@ -92,15 +95,15 @@
     },
     "en": {
         "last-updated": "Last update: ",
-
+        
         "job-title": "@AdriKat - Developer",
         "job-subtitle": "Digital engineer - Game developer and designer - Software developer",
         "nav-profile": "Profile",
-        "nav-portfolio": "Portfolio",
+        "nav-games": "My Games",
         "nav-about": "About",
         "nav-contact": "Contact",
         "title-profile": "My Profile",
-        "title-portfolio": "My Projects",
+        "title-games": "My Games",
         "title-about": "About",
         "title-contact": "Contact",
         "profile-subtitle": "Have a project in mind in the field of game or software dev ?<br>Do not hesitate to contact me by phone or email !",
@@ -113,22 +116,25 @@
         "profile-column-1-5": "Java",
         "profile-column-1-6": "Bash (in a <em>Linux</em> environment)",
         "profile-column-1-7": "HTML/CSS/PHP/JavaScript (with Symphony for the web)",
-
+        
         "profile-column-2-head": "Mastery of multiple <strong>project management and office tools</strong> including...",
         "profile-column-2-1": "GIT version manager (+ LFS)",
         "profile-column-2-2": "Microsoft Office Suite",
         "profile-column-2-3": "Google Suite",
         "profile-column-2-4": "Microsoft Office",
+
+        "portfolio-description": "My portfolio is full of all the projects I have been able to carry out, alone or in teams, during my digital engineering studies at Télécom SudParis, as a school or personal project. You will mainly find video games in this section!",
+        "portfolio-warning": "Warning: The projects might not load correctly, please refresh the page if that's the case.",
         
         "about-p1": "Hello and welcome to my portfolio ! My name is Adrien Schroedel, passionate about software and game dev, I naturally joined a school (Télécom SudParis) to become a digital engineer...<br/>Throughout my training, I participated in many <a href=\"#portfolio\">video game creation projects</a>.",
         "about-p2": "My pleasure comes not only from bringing my expertise on the most used game engines on the market, but also from harmoniously collaborating with a multidisciplinary team to offer a work worthy of the 10th art to all types of audiences.",
         "about-p3": "My dream is to join an ambitious team sharing strong values and an extraordinary cohesion. As long as motivation is present, I think we can accomplish wonders or as young people would say, a <em>masterclass</em>...",
-
+        
         "cv-button-see": "<i class=\"fa-solid fa-eye me-2\"></i>See my resume !",
         "cv-button-download": "<i class=\"fas fa-download me-2\"></i>Download my resume !",
-
+        
         "contact-subtitle": "A question ? An internship or job offer in game or software dev ?<br/>Do not hesitate to contact me, I will answer you as soon as can !",
-
+        
         "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Close",
 
         "project-find-mocha-title": "Find Mocha",
