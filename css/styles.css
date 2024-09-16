@@ -100,6 +100,53 @@
   src: url("../assets/fonts/Pixellari.ttf") format("truetype");
 }
 
+.quick-text-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.quick-text-button {
+
+  color: var(--bs-primary);
+  border: 3px solid var(--bs-primary);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  scale: 1;
+  transition: 0.3s;
+}
+
+.quick-text-button:hover {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+.quick-text p {
+  /* Set the text in the center bother vertically and horizontally */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.grow-animate-on-hover {
+  transition: 0.3s;
+  scale: 1;
+}
+
+.grow-animate-on-hover:hover {
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family-main);
@@ -2855,19 +2902,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1abc9c;
-  --bs-btn-border-color: #1abc9c;
+  --bs-btn-bg: #3b6ab0;
+  --bs-btn-border-color: #93adf3;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #16a085;
-  --bs-btn-hover-border-color: #15967d;
+  --bs-btn-hover-bg: #93d3f3;
+  --bs-btn-hover-border-color: #3b6ab0;
   --bs-btn-focus-shadow-rgb: 60, 198, 171;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #15967d;
-  --bs-btn-active-border-color: #148d75;
+  --bs-btn-active-bg: #6590d1;
+  --bs-btn-active-border-color: #6590d1;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1abc9c;
-  --bs-btn-disabled-border-color: #1abc9c;
+  --bs-btn-disabled-bg: #686868;
+  --bs-btn-disabled-border-color: #686868;
 }
 
 .btn-secondary {
