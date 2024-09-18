@@ -11067,6 +11067,7 @@ html {
   opacity: 0;
   /* background-color: var(--bs-portfolio-hover); */
   background-color: rgba(26, 130, 188, .7);
+  z-index: 10;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
