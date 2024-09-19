@@ -7,14 +7,19 @@
 
 const PROJECTS_JSON_FILENAME = 'assets/projects.json';
 const TEXTS_JSON_FILENAME = 'assets/texts.json';
-const DEFAULT_LANGUAGE = 'fr';
+const DEFAULT_LANGUAGE = 'en';
 const LANGUAGE_NAME_ATTRIBUTE = 'translatable-text';
 const LANGUAGE_SELECTOR_ID = 'language-selector';
 
 
 let translations = null;
-fetch(TEXTS_JSON_FILENAME).then(response => response.json()).then(data => {
+fetch(TEXTS_JSON_FILENAME)
+.then(response => response.json())
+.then(data => {
     translations = data;
+})
+.then(() => {
+    setUserDefaultLanguage();
 });
 
 let all_projects = null;
@@ -116,7 +121,7 @@ const loadProjects = (projects) => {
         portfolioModals.appendChild(modal);
     });
 
-    };
+};
 
 
 
@@ -129,14 +134,28 @@ languageSelector.addEventListener('change', (event) => {
 });
 
 const setLanguage = (language) => {
+    console.log("Setting language to " + language);
     const elements = document.querySelectorAll(`[${LANGUAGE_NAME_ATTRIBUTE}]`);
     elements.forEach(element => {
         const key = element.getAttribute(LANGUAGE_NAME_ATTRIBUTE);
+        console.log(key);
         if (!translations[language][key]) {
             return;
         }
         element.innerHTML = translations[language][key];
     });
+}
+
+const setUserDefaultLanguage = () => {
+    const browserLanguage = navigator.language.split('-')[0];
+    if (browserLanguage === 'fr') {
+        setLanguage('fr');
+        languageSelector.value = 'fr';
+    }
+    else {
+        setLanguage(DEFAULT_LANGUAGE);
+        languageSelector.value = DEFAULT_LANGUAGE;
+    }
 }
 
 
@@ -183,14 +202,4 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-    
-    // Switch the default language if the browser language is english
-    const browserLanguage = navigator.language.split('-')[0];
-    if (browserLanguage === 'en') {
-        setLanguage('en');
-        languageSelector.value = 'en';
-    } else {
-        setLanguage(DEFAULT_LANGUAGE);
-        languageSelector.value = DEFAULT_LANGUAGE;
-    }
 });
