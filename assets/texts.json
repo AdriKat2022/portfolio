@@ -4,7 +4,7 @@
         
         "job-title": "@AdriKat - Développeur",
         "job-subtitle": "Ingénieur du numérique - Développeur et concepteur de jeux - Développeur de logiciels",
-        "nav-profile": "Profil",
+        "nav-profile": "Mon Profil",
         "nav-games": "Mes Jeux",
         "nav-about": "À propos",
         "nav-contact": "Contact",
@@ -101,13 +101,13 @@
         
         "job-title": "@AdriKat - Developer",
         "job-subtitle": "Digital engineer - Game developer and designer - Software developer",
-        "nav-profile": "Profile",
+        "nav-profile": "My Profile",
         "nav-games": "My Games",
-        "nav-about": "About",
+        "nav-about": "About Me",
         "nav-contact": "Contact",
         "title-profile": "My Profile",
         "title-games": "My Games",
-        "title-about": "About",
+        "title-about": "About Me",
         "title-contact": "Contact",
 
         "quick-section-button": "In a hurry? Take the shortcut to my resume.",
