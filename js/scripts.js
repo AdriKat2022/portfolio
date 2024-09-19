@@ -184,5 +184,13 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
     
-    setLanguage(DEFAULT_LANGUAGE);
+    // Switch the default language if the browser language is english
+    const browserLanguage = navigator.language.split('-')[0];
+    if (browserLanguage === 'en') {
+        setLanguage('en');
+        languageSelector.value = 'en';
+    } else {
+        setLanguage(DEFAULT_LANGUAGE);
+        languageSelector.value = DEFAULT_LANGUAGE;
+    }
 });
