@@ -102,9 +102,11 @@
 
 .seeking-box {
   position: relative;
+  display: table;
+  justify-content: center;
+  white-space: nowrap;
   margin: 0 auto;
-  width: 30rem;
-  padding: 20px;
+  padding: 25px 80px 25px 25px;
   background: rgb(255, 255, 255);
   color: #254c9b;
   border: 3px solid #3b6ab0;
@@ -115,6 +117,7 @@
 }
 
 .seeking-box h2 {
+  overflow-wrap: unset;
   font-size: 25px;
   font-weight: bold;
   margin: 0 0 0px;
