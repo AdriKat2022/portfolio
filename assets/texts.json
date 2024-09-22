@@ -13,7 +13,12 @@
         "title-about": "À propos",
         "title-contact": "Contact",
 
-        "quick-section-button": "Pressé(e) ? Accédez directement à mon CV",
+        "seeking-position-title": "Stage Développeur de Jeux vidéo",
+        "seeking-position-subtitle": "Stage de fin d'études (6 mois)",
+        "seeking-date": "À partir du 08 Février 2025",
+        "seeking-locations": "Royaume-Uni, Canada, Irelande, Pays-Bas (préféré mais non limité à)",
+
+        "cv-button": "Intéressé ? Prenez le raccourci vers mon CV !",
 
         "profile-subtitle": "Vous avez un projet en tête dans le domaine du game dev ou du software ?<br>N'hésitez pas à me contacter par <a href=\"mailto:adrien.schroedel@telecom-sudparis.eu\">mail</a> ou par téléphone !",
 
@@ -110,7 +115,12 @@
         "title-about": "About Me",
         "title-contact": "Contact",
 
-        "quick-section-button": "In a hurry? Take the shortcut to my resume",
+        "seeking-position-title": "Game Developer Internship",
+        "seeking-position-subtitle": "End of studies internship (6 months)",
+        "seeking-date": "From February 8th, 2025",
+        "seeking-locations": "United Kingdom, Canada, Ireland, Netherlands (prefered but not limited to)",
+
+        "cv-button": "Interested ? Take the shortcut to my resume !",
 
         "profile-subtitle": "Have a project in mind in the field of game or software development ?<br>Do not hesitate to contact me by phone or <a href=\"mailto:adrien.schroedel@telecom-sudparis\">email</a> !",
         

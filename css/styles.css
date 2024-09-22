@@ -100,13 +100,85 @@
   src: url("../assets/fonts/Pixellari.ttf") format("truetype");
 }
 
-.quick-text-container {
+.seeking-box {
+  position: relative;
+  display: table;
+  justify-content: center;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 25px 80px 25px 25px;
+  background: rgb(255, 255, 255);
+  color: #254c9b;
+  border: 3px solid #3b6ab0;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.seeking-box h2 {
+  overflow-wrap: unset;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0 0px;
+}
+
+.seeking-box p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.seeking-box .type {
+  font-size: 17px;
+  color: #333;
+  font-weight: bold;
+  margin: 0px 0 15px 0;
+}
+
+.seeking-box .date {
+  color: #666;
+}
+
+.seeking-box .location {
+  color: #333;
+  font-style: italic;
+}
+
+.seeking-box::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      45deg,
+      #0066ff25 0%,
+      #0066ff25 5%,
+      #ffffff 5%,
+      #ffffff 10%
+  );
+  z-index: -1;
+  animation: stripesMove 5s linear infinite;
+}
+
+@keyframes stripesMove {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-23.2%);
+  }
+}
+
+.cv-button-container {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.quick-text-button {
+.cv-button {
 
   color: var(--bs-primary);
   border: 3px solid var(--bs-primary);
@@ -121,15 +193,14 @@
   transition: 0.3s;
 }
 
-.quick-text-button:hover {
+.cv-button:hover {
   background-color: var(--bs-primary);
   color: var(--bs-white);
   scale: 1.05;
   transition: 0.3s;
 }
 
-.quick-text p {
-  /* Set the text in the center bother vertically and horizontally */
+.cv-button p {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
