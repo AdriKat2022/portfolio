@@ -116,6 +116,7 @@
   z-index: 1;
 }
 
+
 .seeking-box h2 {
   overflow-wrap: unset;
   font-size: 25px;
@@ -143,6 +144,50 @@
 .seeking-box .location {
   color: #333;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .seeking-box {
+      padding: 25px 80px 25px 25px;
+  }
+
+  .seeking-box .type {
+      font-size: 15px;
+  }
+
+  .seeking-box h2 {
+      font-size: 20px;
+  }
+
+  .seeking-box p {
+      font-size: 10px;
+  }
+}
+
+@media (max-width: 492px){
+  .seeking-box {
+      padding: 25px 25px 25px 25px;
+  }
+
+  .seeking-box h2 {
+      font-size: 18px;
+  }
+
+  .seeking-box p {
+      font-size: 10px;
+  }
+
+  .seeking-box .type {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 380px){
+  .seeking-box {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+  }
 }
 
 .seeking-box::before {
