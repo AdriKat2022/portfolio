@@ -104,7 +104,7 @@ const loadProjects = (projects) => {
         index = 1;
         buttonContainer = modalElement.querySelector('#project-buttons');
         project.actions.forEach(action => {
-            // console.log(action);
+            console.log(action);
             const buttonTemplate = modalElement.querySelector('#project-button-' + action.type.toLowerCase());
             buttonNode = buttonTemplate.content.cloneNode(true);
             button = buttonNode.querySelector('.btn');
@@ -119,6 +119,8 @@ const loadProjects = (projects) => {
 
         // Add the modal to the modals container
         portfolioModals.appendChild(modal);
+        setLanguage(DEFAULT_LANGUAGE, modalElement);
+        console.log("Set language for modal", project.id);
     });
 
 };
@@ -133,12 +135,11 @@ languageSelector.addEventListener('change', (event) => {
     setLanguage(lang);
 });
 
-const setLanguage = (language) => {
-    console.log("Setting language to " + language);
-    const elements = document.querySelectorAll(`[${LANGUAGE_NAME_ATTRIBUTE}]`);
+const setLanguage = (language, node = null) => {
+    const root = node || document;
+    const elements = root.querySelectorAll(`[${LANGUAGE_NAME_ATTRIBUTE}]`);
     elements.forEach(element => {
         const key = element.getAttribute(LANGUAGE_NAME_ATTRIBUTE);
-        console.log(key);
         if (!translations[language][key]) {
             return;
         }
