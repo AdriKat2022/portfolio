@@ -31,7 +31,7 @@ fetch(PROJECTS_JSON_FILENAME).then(response => response.json()).then(data => {
 });
 
 
-// Project loader function
+// Loads projects in the html function
 const loadProjects = (projects) => {
 
     // Cover cards
@@ -52,7 +52,6 @@ const loadProjects = (projects) => {
 
         // Add the card to the portfolio container
         portfolioContainer.appendChild(card);
-
 
         // Clone and populate the modal template
         const modal = modalTemplate.content.cloneNode(true);
@@ -81,11 +80,9 @@ const loadProjects = (projects) => {
         const descriptionElement2 = modalElement.querySelector('#project-description-2');
         descriptionElement2.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-description-2`];
         descriptionElement2.setAttribute('translatable-text',`project-${project.id}-description-2`);
+
         // Add the images to the modal
-
-        //const carousel = modalElement.querySelector('.carousel-inner');
         const carousel = modalElement.querySelector('#project-carousel');
-
         project.imgs.forEach((img, index) => {
             // const carouselItem = document.createElement('div');
             // carouselItem.classList.add('carousel-item');
@@ -99,6 +96,21 @@ const loadProjects = (projects) => {
             // carousel.appendChild(carouselItem);
         });
 
+        // Add the technologies to the modal (no need for translation for now)
+        const technologiesContainer = modalElement.querySelector('.project-technologies');
+        // If there are properties, add it to the modal
+        if (project.technologies.length > 0) {
+            project.technologies.forEach(technology => {
+                const technologyElement = document.createElement('span');
+                technologyElement.classList.add('badge', 'bg-secondary', 'me-1');
+                technologyElement.innerHTML = technology;
+                technologiesContainer.appendChild(technologyElement);
+            });
+        }   
+        else {
+            const technologiesSection = modalElement.querySelector('#project-technologies-section');
+            technologiesSection.style.display = 'none';
+        }
 
         // Add the actions to the modal
         index = 1;

@@ -8,6 +8,11 @@
             "assets/portfolio/find_mocha_3.png",
             "assets/portfolio/find_mocha_4.png"
         ],
+        "technologies": [
+            "Unity",
+            "C#",
+            "GIT"
+        ],
         "actions": [
             {
                 "type": "LINK",
@@ -24,6 +29,13 @@
             "assets/portfolio/rupture_3.png",
             "assets/portfolio/rupture_4.png",
             "assets/portfolio/rupture_5.png"
+        ],
+        "technologies": [
+            "UnrealEngine",
+            "C++",
+            "Animation Rigging",
+            "GIT",
+            "GIT LFS"
         ],
         "actions": [
             {
@@ -42,6 +54,11 @@
         "imgs": [
             "assets/portfolio/shippingTime.png"
         ],
+        "technologies": [
+            "Unity",
+            "C#",
+            "GIT"
+        ],
         "actions": [
             {
                 "type": "LINK",
@@ -54,6 +71,11 @@
         "cover_img": "assets/portfolio/theLegendOfBloCover.png",
         "imgs": [
             "assets/portfolio/theLegendOfBlo.png"
+        ],
+        "technologies": [
+            "Unity",
+            "C#",
+            "GIT"
         ],
         "actions": [
             {
@@ -68,6 +90,11 @@
         "imgs": [
             "assets/portfolio/magicCircus.png"
         ],
+        "technologies":[
+            "Unity",
+            "C#",
+            "GIT"
+        ],
         "actions": [
             {
                 "type": "LINK",
@@ -81,6 +108,11 @@
         "imgs": [
             "assets/portfolio/translimation.png"
         ],
+        "technologies": [
+            "Unity",
+            "C#",
+            "GIT"
+        ],
         "actions": [
             {
                 "type": "LINK",
@@ -93,6 +125,11 @@
         "cover_img": "assets/portfolio/explodingTreeCover.png",
         "imgs": [
             "assets/portfolio/explodingTree.png"
+        ],
+        "technologies": [
+            "Unity",
+            "C#",
+            "GIT"
         ],
         "actions": [
             {
