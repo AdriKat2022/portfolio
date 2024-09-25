@@ -13,22 +13,7 @@ const LANGUAGE_SELECTOR_ID = 'language-selector';
 
 
 let translations = null;
-fetch(TEXTS_JSON_FILENAME)
-.then(response => response.json())
-.then(data => {
-    translations = data;
-})
-.then(() => {
-    setUserDefaultLanguage();
-});
-
 let all_projects = null;
-fetch(PROJECTS_JSON_FILENAME).then(response => response.json()).then(data => {
-    all_projects = data;
-    return all_projects;
-}).then(projects => {
-    loadProjects(projects);
-});
 
 
 // Loads projects in the html function
@@ -41,7 +26,8 @@ const loadProjects = (projects) => {
     const portfolioModals = document.getElementById('portfolio-modals');
     const modalTemplate = document.getElementById('portfolio-modal-template');
 
-    projects.forEach((project, index) => {
+    try {
+        projects.forEach((project, index) => {
         // Clone and populate the cover card template
         const card = cardTemplate.content.cloneNode(true);
         const cardElement = card.querySelector('.portfolio-item');
@@ -49,16 +35,16 @@ const loadProjects = (projects) => {
         cardElement.setAttribute('data-bs-target', '#portfolio-modal-' + project.id);
         const cardImg = cardElement.querySelector('.img-fluid');
         cardImg.src = project.cover_img;
-
+        
         // Add the card to the portfolio container
         portfolioContainer.appendChild(card);
-
+        
         // Clone and populate the modal template
         const modal = modalTemplate.content.cloneNode(true);
         const modalElement = modal.querySelector('.portfolio-modal');
         modalElement.id = `portfolio-modal-${project.id}`;
         modalElement.setAttribute('aria-labelledby', 'portfolio-modal-' + project.id);
-
+        
         // Get the text elements with their ids
         // get the title element (id="project-title") and set the translatable text attribute
         const titleElement = modalElement.querySelector('#project-title');
@@ -80,22 +66,22 @@ const loadProjects = (projects) => {
         const descriptionElement2 = modalElement.querySelector('#project-description-2');
         descriptionElement2.innerHTML = translations[DEFAULT_LANGUAGE][`project-${project.id}-description-2`];
         descriptionElement2.setAttribute('translatable-text',`project-${project.id}-description-2`);
-
+        
         // Add the images to the modal
         const carousel = modalElement.querySelector('#project-carousel');
         project.imgs.forEach((img, index) => {
             // const carouselItem = document.createElement('div');
             // carouselItem.classList.add('carousel-item');
             // if (index === 0) {
-            //     carouselItem.classList.add('active');
-            // }
-            carousel.innerHTML += `<img src="${img}" class="d-block w-100" alt="...">`;
+                //     carouselItem.classList.add('active');
+                // }
+                carousel.innerHTML += `<img src="${img}" class="d-block w-100" alt="...">`;
             // if (index === 0) {
             //     carouselItem.classList.add('active');
             // }
             // carousel.appendChild(carouselItem);
         });
-
+        
         // Add the technologies to the modal (no need for translation for now)
         const technologiesContainer = modalElement.querySelector('.project-technologies');
         // If there are properties, add it to the modal
@@ -111,12 +97,12 @@ const loadProjects = (projects) => {
             const technologiesSection = modalElement.querySelector('#project-technologies-section');
             technologiesSection.style.display = 'none';
         }
-
+        
         // Add the actions to the modal
         index = 1;
         buttonContainer = modalElement.querySelector('#project-buttons');
         project.actions.forEach(action => {
-            console.log(action);
+            // console.log(action);
             const buttonTemplate = modalElement.querySelector('#project-button-' + action.type.toLowerCase());
             buttonNode = buttonTemplate.content.cloneNode(true);
             button = buttonNode.querySelector('.btn');
@@ -128,13 +114,23 @@ const loadProjects = (projects) => {
             buttonContainer.appendChild(button);
             index++;
         });
-
+        
         // Add the modal to the modals container
         portfolioModals.appendChild(modal);
         setLanguage(DEFAULT_LANGUAGE, modalElement);
-        console.log("Set language for modal", project.id);
-    });
+        // console.log("Set language for modal", project.id);
+        });
+    }
+    catch (error) {
+        console.error(error);
+        console.log('Error while loading projects!');
 
+        const errorElement = document.createElement('div');
+        errorElement.classList.add('alert', 'alert-danger', 'text-center');
+        errorElement.innerHTML = 'Error while loading projects!';
+        portfolioContainer.innerHTML = '';
+        portfolioContainer.appendChild(errorElement);
+    }
 };
 
 
@@ -215,4 +211,20 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+
+    // Initiate Texts and Projects
+    fetch(TEXTS_JSON_FILENAME)
+    .then(response => response.json())
+    .then(data => {
+        translations = data;
+    })
+    .then(() => setUserDefaultLanguage())
+    .then(() => fetch(PROJECTS_JSON_FILENAME))
+    .then(response => response.json())
+    .then(data => {
+        all_projects = data;
+        return all_projects;
+    })
+    .then(projects => loadProjects(projects));
 });
