@@ -51,7 +51,8 @@
 
         "contact-subtitle": "Une question dans un domaine particulier comme le jeu vidéo, logiciel ou même tout autre chose ? <br/>N'hésitez pas à me contacter, je serai ravi d'en discuter avec vous !",
 
-        "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Fermer",
+        "projects-technologies": "Technologies utilisées",
+        "projects-button-close": "<i class=\"fas fa-xmark fa-fw\"></i>Fermer",
 
         "project-find-mocha-title": "Find Mocha",
         "project-find-mocha-date": "Depuis Novembre 2023",
@@ -155,6 +156,7 @@
         
         "contact-subtitle": "A question in a particular field such as video games, software or even something else ? <br/>Engage the discussion, I will be happy to discuss it with you !",
         
+        "projects-technologies": "Technologies used",
         "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Close",
 
         "project-find-mocha-title": "Find Mocha",

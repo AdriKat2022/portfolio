@@ -100,6 +100,16 @@
   src: url("../assets/fonts/Pixellari.ttf") format("truetype");
 }
 
+.project-technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .seeking-box {
   position: relative;
   display: table;
