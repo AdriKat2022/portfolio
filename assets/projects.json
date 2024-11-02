@@ -93,7 +93,8 @@
         "technologies":[
             "Unity",
             "C#",
-            "GIT"
+            "GIT",
+            "Nav-Mesh"
         ],
         "actions": [
             {

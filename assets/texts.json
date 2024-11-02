@@ -22,7 +22,7 @@
 
         "cv-button": "Intéressé ? Prenez le raccourci vers mon CV !",
 
-        "profile-subtitle": "Vous avez un projet en tête dans le domaine du game dev ou du software ?<br>N'hésitez pas à me contacter par <a href=\"mailto:adrien.schroedel@telecom-sudparis.eu\">mail</a> ou par téléphone !",
+        "profile-subtitle": "Vous avez un projet en tête dans le domaine du game dev ou du software ?<br>N'hésitez pas à me contacter par <a href=\"mailto:adrien.schroedel@telecom-sudparis.eu\">mail</a> ou par <a href=\"tel:+33781565695\">téléphone</a> !",
 
         "profile-column-1-head": "Maîtrise de multiples <strong>languages de programmation</strong> parmi...",
         "profile-column-1-1": "C++ (avec notamment <em>Unreal Engine 5</em>)",
@@ -46,8 +46,7 @@
         "about-p2": "Mon plaisir vient non seulement d'apporter mon expertise sur les moteurs de jeu les plus utilisés sur le marché, mais aussi de collaborer harmonieusement avec une équipe pluridisciplinaire pour offrir une œuvre digne du 10me art à tout type de publics.",
         "about-p3": "Mon rêve est d'intégrer une équipe ambitieuse partageant des valeurs fortes et une cohésion hors du commun. Dès lors que la motivation est présente, je pense que nous pouvons accomplir des merveilles.",
 
-        "cv-button-see": "<i class=\"fa-solid fa-eye me-2\"></i>Voir mon CV !",
-        "cv-button-download": "<i class=\"fas fa-download me-2\"></i>Télécharger mon CV !",
+        "about-resume-title": "Mon CV",
 
         "contact-subtitle": "Une question dans un domaine particulier comme le jeu vidéo, logiciel ou même tout autre chose ? <br/>N'hésitez pas à me contacter, je serai ravi d'en discuter avec vous !",
 
@@ -127,7 +126,7 @@
 
         "cv-button": "Interested ? Take the shortcut to my resume !",
 
-        "profile-subtitle": "Have a project in mind in the field of game or software development ?<br>Do not hesitate to contact me by phone or <a href=\"mailto:adrien.schroedel@telecom-sudparis\">email</a> !",
+        "profile-subtitle": "Have a project in mind in the field of game or software development ?<br>Do not hesitate to contact me by <a href=\"tel:+33781565695\">phone</a> or <a href=\"mailto:adrien.schroedel@telecom-sudparis\">email</a> !",
         
         "profile-column-1-head": "Mastery of multiple <strong>programming languages</strong> including...",
         "profile-column-1-1": "C++ (including <em>Unreal Engine 5</em>)",
@@ -151,8 +150,7 @@
         "about-p2": "My pleasure comes not only from bringing my expertise on the most used game engines on the market, but also from harmoniously collaborating with a multidisciplinary team to offer a work worthy of the 10th art to all types of audiences.",
         "about-p3": "My dream is to join an ambitious team sharing strong values and an extraordinary cohesion. As long as motivation is present, I think we can accomplish wonders.",
         
-        "cv-button-see": "<i class=\"fa-solid fa-eye me-2\"></i>See my resume !",
-        "cv-button-download": "<i class=\"fas fa-download me-2\"></i>Download my resume !",
+        "about-resume-title": "My resume",
         
         "contact-subtitle": "A question in a particular field such as video games, software or even something else ? <br/>Engage the discussion, I will be happy to discuss it with you !",
         
