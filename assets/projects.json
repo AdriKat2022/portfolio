@@ -1,12 +1,12 @@
 [
     {
         "id": "find-mocha",
-        "cover_img": "assets/portfolio/find_mocha_cover.png",
+        "cover_img": "assets/portfolio/find_mocha_cover.jpg",
         "imgs": [
-            "assets/portfolio/find_mocha_1.png",
-            "assets/portfolio/find_mocha_2.png",
-            "assets/portfolio/find_mocha_3.png",
-            "assets/portfolio/find_mocha_4.png"
+            "assets/portfolio/find_mocha_1.jpg",
+            "assets/portfolio/find_mocha_2.jpg",
+            "assets/portfolio/find_mocha_3.jpg",
+            "assets/portfolio/find_mocha_4.jpg"
         ],
         "technologies": [
             "Unity",
@@ -50,9 +50,9 @@
     },
     {
         "id": "shipping-time",
-        "cover_img": "assets/portfolio/shippingTimeCover.png",
+        "cover_img": "assets/portfolio/shippingTimeCover.jpg",
         "imgs": [
-            "assets/portfolio/shippingTime.png"
+            "assets/portfolio/shippingTime.jpg"
         ],
         "technologies": [
             "Unity",
@@ -68,9 +68,9 @@
     },
     {
         "id": "the-legend-of-blo",
-        "cover_img": "assets/portfolio/theLegendOfBloCover.png",
+        "cover_img": "assets/portfolio/theLegendOfBloCover.jpg",
         "imgs": [
-            "assets/portfolio/theLegendOfBlo.png"
+            "assets/portfolio/theLegendOfBlo.jpg"
         ],
         "technologies": [
             "Unity",
@@ -86,9 +86,9 @@
     },
     {
         "id": "magic-circus",
-        "cover_img": "assets/portfolio/magicCircusCover.png",
+        "cover_img": "assets/portfolio/magicCircusCover.jpg",
         "imgs": [
-            "assets/portfolio/magicCircus.png"
+            "assets/portfolio/magicCircus.jpg"
         ],
         "technologies":[
             "Unity",
@@ -105,9 +105,9 @@
     },
     {
         "id": "translimation",
-        "cover_img": "assets/portfolio/translimationCover.png",
+        "cover_img": "assets/portfolio/translimationCover.jpg",
         "imgs": [
-            "assets/portfolio/translimation.png"
+            "assets/portfolio/translimation.jpg"
         ],
         "technologies": [
             "Unity",
@@ -123,9 +123,9 @@
     },
     {
         "id": "exploding-tree",
-        "cover_img": "assets/portfolio/explodingTreeCover.png",
+        "cover_img": "assets/portfolio/explodingTreeCover.jpg",
         "imgs": [
-            "assets/portfolio/explodingTree.png"
+            "assets/portfolio/explodingTree.jpg"
         ],
         "technologies": [
             "Unity",
