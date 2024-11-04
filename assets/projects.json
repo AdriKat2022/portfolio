@@ -22,13 +22,13 @@
     },
     {
         "id": "rupture",
-        "cover_img": "assets/portfolio/rupture_cover.png",
+        "cover_img": "assets/portfolio/rupture_cover.jpg",
         "imgs": [
-            "assets/portfolio/rupture_1.png",
-            "assets/portfolio/rupture_2.png",
-            "assets/portfolio/rupture_3.png",
-            "assets/portfolio/rupture_4.png",
-            "assets/portfolio/rupture_5.png"
+            "assets/portfolio/rupture_1.jpg",
+            "assets/portfolio/rupture_2.jpg",
+            "assets/portfolio/rupture_3.jpg",
+            "assets/portfolio/rupture_4.jpg",
+            "assets/portfolio/rupture_5.jpg"
         ],
         "technologies": [
             "UnrealEngine",
