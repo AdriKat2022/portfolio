@@ -97,13 +97,30 @@
 
 @font-face {
   font-family: "Pixellari";
-  src: url("../assets/fonts/Pixellari.ttf") format("truetype");
+  src: url("/assets/fonts/Pixellari.ttf") format("truetype");
+}
+
+.language-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-option {
+  text-transform: none;
+}
+
+.flag-icon {
+  width: 16px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .projects-pinned-subsection {
   border-radius: 0.4rem;
-  /* background-color: #f3965a; */
-  /* background-color: #f3965a; */
+  background-color: #254c9b;
+  background-color: #93d3f3;
+  background-color: #f3965a;
   background-color: #dadada;
 }
 
@@ -3436,7 +3453,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #1abc9c;
+  --bs-dropdown-link-active-bg: #93d3f3;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -11114,7 +11131,7 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #93d3f3; 
 }
 #mainNav .navbar-toggler {
   font-size: 80%;

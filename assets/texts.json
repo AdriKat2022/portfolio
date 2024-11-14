@@ -40,7 +40,7 @@
         "profile-column-2-4": "Microsoft Office",
 
         "portfolio-description": "Mon portfolio regorge de tous les projets auxquels j'ai participé, seul ou en équipe, durant mes études d'ingénieur du numérique à Télécom SudParis, en tant que projet scolaire ou personnel. Vous y trouverez principalement des jeux vidéo dans cette section !",
-        "portfolio-pinned-subsection": "Jeux épinglés",
+        "portfolio-pinned-subsection": "Jeux épinglés <i class=\"ms-2 fa-solid fa-thumbtack\"></i>",
         "portfolio-other-games-subsection": "Mes autres jeux",
         "portfolio-warning": "Attention : Si le chargement des projets ne s'est pas faite correctement, veuillez <a href=\".\">rafraîchir la page</a>.",
         
@@ -55,6 +55,13 @@
         "projects-technologies": "Technologies utilisées",
         "projects-button-close": "<i class=\"fas fa-xmark fa-fw\"></i>Fermer",
 
+        "project-the-kairi-invasion-title": "The Kairi Invasion",
+        "project-the-kairi-invasion-date": "Depuis Octobre 2024",
+        "project-the-kairi-invasion-subtitle": "Un jeu à la shoot em up où vous devez défendre votre puissance économique avec des burgers.",
+        "project-the-kairi-invasion-description-1": "<p><strong>The Kairi Invasion</strong> tient son origine d'un simple travail pratique d'école où nous étions attendu de faire un jeu de tir (SCHMUP). Une fois le projet terminé du point de vue scolaire, j'ai voulu continuer à le paufiner afin d'avoir de meilleurs images (fond d'écran, ennemis, projectiles..).</p>",
+        "project-the-kairi-invasion-description-2": "<p>Je me suis surtout concentré sur le côté <em>game juice</em>, incluant par exemple, une interface utilisateur agréable et satisfaisante, un bon retour et bonne expérience utilisateur.. Les animations que vous pouvez apercevoir en jouant ont été codé dans Unity, notamment grâce à des coroutines.</p>",
+        "project-the-kairi-invasion-action-button-1": "The Kairi Invasion page (GitHub)",
+
         "project-find-mocha-title": "Find Mocha",
         "project-find-mocha-date": "Depuis Novembre 2023",
         "project-find-mocha-subtitle": "Un jeu de plateforme 2D où vous incarnez un ours mignon à la recherche de son ami",
@@ -67,8 +74,7 @@
         "project-rupture-subtitle": "Un jeu vidéo impactant sur le thème du Développement Durable",
         "project-rupture-description-1": "<p><strong>Rupture</strong> est un projet réalisé par un groupe de 4 étudiants dans le cadre d'une formation d'ingénieur du numérique à Télécom SudParis.</p>",
         "project-rupture-description-2": "<p>Dans ce jeu de type narratif, vous incarnez le point de vue d'un modeste robot observant l'état de la société dans un futur proche. Alors que votre mission simple est d'aider un jeune couple, votre tâche se métamorphose alors de manière inattendue en une mission bien plus importante que de simple divertissement.</p><p>L'objectif principal de ce projet était notamment d'apprendre à utiliser le moteur UnrealEngine 5 pour créer un jeu vidéo impactant sur le thème du Développement Durable.</p><p>Le rapport du projet est disponible.</p>",
-        "project-rupture-action-button-1": "Télécharger le rapport",
-        "project-rupture-action-button-2": "Voir le rapport",
+        "project-rupture-action-button-1": "Accéder au Rapport de Rupture",
 
         "project-shipping-time-title": "Shipping Time",
         "project-shipping-time-date": "Avril 2024",
@@ -146,7 +152,7 @@
         "profile-column-2-4": "Microsoft Office",
 
         "portfolio-description": "My portfolio is full of all the projects I have been able to carry out, alone or in teams, during my digital engineering studies at Télécom SudParis, as a school or personal project. You will mainly find video games in this section!",
-        "portfolio-pinned-subsection": "Pinned Games",
+        "portfolio-pinned-subsection": "Pinned Games <i class=\"ms-2 fa-solid fa-thumbtack\"></i>",
         "portfolio-other-games-subsection": "My Other Games",
         "portfolio-warning": "Warning: The projects might not load correctly, please <a href=\".\">refresh the page</a> if that's the case.",
         
@@ -161,20 +167,26 @@
         "projects-technologies": "Technologies used",
         "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Close",
 
+        "project-the-kairi-invasion-title": "The Kairi Invasion",
+        "project-the-kairi-invasion-date": "From October 2024",
+        "project-the-kairi-invasion-subtitle": "A shoot them up style game where you shall defend your economical power with burgers.",
+        "project-the-kairi-invasion-description-1": "<p><strong>The Kairi Invasion</strong> was at first a simple school exercice. We were excpected to build a small SCHMUP project to warm up for the year. Once the project was completed I decided to continue the project just a bit to have better visuals (background, enemies, projectiles...).</p>",
+        "project-the-kairi-invasion-description-2": "<p>In this project I mainly focused on the <em>game juice</em>, that includes for example a satisfaying and pleasant UI, player feedback and good user experience. All the animations you can see while playing the game was coded in Unity mainly with Coroutines</p>",
+        "project-the-kairi-invasion-action-button-1": "The Kairi Invasion page (GitHub)",
+
         "project-find-mocha-title": "Find Mocha",
         "project-find-mocha-date": "From November 2023",
         "project-find-mocha-subtitle": "An 2D platformer where you play as a cute bear looking for his friend",
         "project-find-mocha-description-1": "<p><strong>Find Mocha</strong> has been my personal favourite project so far. In fact, the motivation for this project were at first to deliver it as a present to a very close friend. That may explain why the starting motivation I had for this one was that high.</p>",
         "project-find-mocha-description-2": "<p>In this little platformer all code home-made, you play as a little bear named Milk that explores sweet mountains to find his friend Mocha.</p><p>Different types of powerups will help you through your journey, but beware of the bad thoughts monsters !</p><p>You can play by downloading the game on GitHub.</p>",
-        "project-find-mocha-action-button-1": "Project page (GitHub)",
+        "project-find-mocha-action-button-1": "Find Mocha page (GitHub)",
 
         "project-rupture-title": "Rupture",
         "project-rupture-date": "January - June 2024",
         "project-rupture-subtitle": "An impactful video game on the theme of Sustainable Development",
         "project-rupture-description-1": "<p><strong>Rupture</strong> is a project carried out by a group of 4 students as part of a training as a digital engineer at Télécom SudParis.</p>",
         "project-rupture-description-2": "<p>In this narrative-style game, you embody the point of view of a humble robot observing the status of society in the near future. While your simple mission is to help a young couple, your task then unexpectedly metamorphoses into a much more important one than mere entertainment.</p><p>The primary objective of this project was notably to learn how to use the UnrealEngine 5 engine to create an impactful video game on the theme of Sustainable Development.</p><p>The report of the project is available.</p>",
-        "project-rupture-action-button-1": "Download the report",
-        "project-rupture-action-button-2": "See the report",
+        "project-rupture-action-button-1": "Access Rupture Report",
 
         "project-shipping-time-title": "Shipping Time",
         "project-shipping-time-date": "April 2024",

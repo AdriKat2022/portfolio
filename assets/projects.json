@@ -1,5 +1,27 @@
 [
     {
+        "pinned": "false",
+        "id": "the-kairi-invasion",
+        "cover_img": "assets/portfolio/theKairiInvasionCover.jpg",
+        "imgs": [
+            "assets/portfolio/theKairiInvasion_1.jpg",
+            "assets/portfolio/theKairiInvasion_2.jpg",
+            "assets/portfolio/theKairiInvasion_3.jpg",
+            "assets/portfolio/theKairiInvasion_4.jpg"
+        ],
+        "technologies": [
+            "Unity",
+            "C#",
+            "GIT"
+        ],
+        "actions": [
+            {
+                "type": "LINK-NT",
+                "link": "https://github.com/AdriKat2022/SCHMUP/tree/burgerVer"
+            }
+        ]
+    },
+    {
         "pinned": "true",
         "id": "find-mocha",
         "cover_img": "assets/portfolio/find_mocha_cover.jpg",
@@ -16,7 +38,7 @@
         ],
         "actions": [
             {
-                "type": "LINK",
+                "type": "LINK-NT",
                 "link": "https://github.com/AdriKat2022/find-mocha"
             }
         ]
@@ -41,11 +63,7 @@
         ],
         "actions": [
             {
-                "type": "DOWNLOAD",
-                "link": "assets/doc/rupture-report.pdf"
-            },
-            {
-                "type": "LINK",
+                "type": "LINK-NT",
                 "link": "assets/doc/rupture-report.pdf"
             }
         ]
@@ -63,7 +81,7 @@
         ],
         "actions": [
             {
-                "type": "LINK",
+                "type": "LINK-NT",
                 "link": "https://adrikat-1.itch.io/shipping-time"
             }
         ]
@@ -81,7 +99,7 @@
         ],
         "actions": [
             {
-                "type": "LINK",
+                "type": "LINK-NT",
                 "link": "https://valt7.itch.io/legendblo"
             }
         ]
@@ -100,7 +118,7 @@
         ],
         "actions": [
             {
-                "type": "LINK",
+                "type": "LINK-NT",
                 "link": "https://github.com/AdriKat2022/AMJV-CTF"
             }
         ]
@@ -118,7 +136,7 @@
         ],
         "actions": [
             {
-                "type": "LINK",
+                "type": "LINK-NT",
                 "link": "https://miloderoussi.itch.io/translimation"
             }
         ]
@@ -136,7 +154,7 @@
         ],
         "actions": [
             {
-                "type": "LINK",
+                "type": "LINK-NT",
                 "link": "https://github.com/HugoLhuilier/ExplodingTree"
             }
         ]
