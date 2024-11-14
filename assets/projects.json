@@ -1,5 +1,27 @@
 [
     {
+        "pinned": "false",
+        "id": "the-kairi-invasion",
+        "cover_img": "assets/portfolio/theKairiInvasionCover.jpg",
+        "imgs": [
+            "assets/portfolio/theKairiInvasion_1.jpg",
+            "assets/portfolio/theKairiInvasion_2.jpg",
+            "assets/portfolio/theKairiInvasion_3.jpg",
+            "assets/portfolio/theKairiInvasion_4.jpg"
+        ],
+        "technologies": [
+            "Unity",
+            "C#",
+            "GIT"
+        ],
+        "actions": [
+            {
+                "type": "LINK",
+                "link": "https://github.com/AdriKat2022/SCHMUP/tree/burgerVer"
+            }
+        ]
+    },
+    {
         "pinned": "true",
         "id": "find-mocha",
         "cover_img": "assets/portfolio/find_mocha_cover.jpg",
