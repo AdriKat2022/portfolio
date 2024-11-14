@@ -1,5 +1,6 @@
 [
     {
+        "pinned": "true",
         "id": "find-mocha",
         "cover_img": "assets/portfolio/find_mocha_cover.jpg",
         "imgs": [
@@ -21,6 +22,7 @@
         ]
     },
     {
+        "pinned": "true",
         "id": "rupture",
         "cover_img": "assets/portfolio/rupture_cover.jpg",
         "imgs": [

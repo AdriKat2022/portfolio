@@ -21,6 +21,7 @@ const loadProjects = (projects) => {
 
     // Cover cards
     const portfolioContainer = document.getElementById('portfolio-grid-container');
+    const portfolioPinnedContainer = document.getElementById('portfolio-grid-container-pinned');
     const cardTemplate = document.getElementById('portfolio-card-template');
     // Modals popups
     const portfolioModals = document.getElementById('portfolio-modals');
@@ -36,8 +37,12 @@ const loadProjects = (projects) => {
         const cardImg = cardElement.querySelector('.img-fluid');
         cardImg.src = project.cover_img;
         
-        // Add the card to the portfolio container
-        portfolioContainer.appendChild(card);
+        // Add the card to the portfolio container or pinned container (depending on the pinned option)
+        const isPinned = project.pinned;
+        if (isPinned == "true")
+            portfolioPinnedContainer.appendChild(card);
+        else
+            portfolioContainer.appendChild(card);
         
         // Clone and populate the modal template
         const modal = modalTemplate.content.cloneNode(true);
