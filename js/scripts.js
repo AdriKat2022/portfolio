@@ -138,15 +138,38 @@ const loadProjects = (projects) => {
     }
 };
 
-
-
 // Language selector
-const languageSelector = document.getElementById(LANGUAGE_SELECTOR_ID);
-
-languageSelector.addEventListener('change', (event) => {
-    const lang = event.target.value;
-    setLanguage(lang);
+document.querySelectorAll('.language-option').forEach(option => {
+    option.addEventListener('click', (event) => {
+        event.preventDefault();
+        handleLanguage(event.target);
+    })
 });
+
+// Takes the language button as argument, used to update the visual and change the language of the document
+const handleLanguage = (languageButton, languageStr) => {
+
+    if (!languageButton)
+    {
+        languageButton = document.querySelector(`a.dropdown-item.language-option[data-value="${languageStr}"]`);
+        if (!languageButton)
+        {
+            console.error(`HandleLanguage did not find a language option of data-value="${languageStr}".`)
+            return;
+        }
+    }
+
+    const lang = languageButton.getAttribute("data-value");
+
+    // Get the selected language text and flag
+    const decorator = languageButton.innerHTML;
+
+    // Update the dropdown button to show the selected language
+    const dropdownButton = document.getElementById('languageDropdownButton');
+    dropdownButton.innerHTML = decorator;
+
+    setLanguage(lang);
+}
 
 const setLanguage = (language, node = null) => {
     const root = node || document;
@@ -163,12 +186,10 @@ const setLanguage = (language, node = null) => {
 const setUserDefaultLanguage = () => {
     const browserLanguage = navigator.language.split('-')[0];
     if (browserLanguage === 'fr') {
-        setLanguage('fr');
-        languageSelector.value = 'fr';
+        handleLanguage(null, 'fr');
     }
     else {
-        setLanguage(DEFAULT_LANGUAGE);
-        languageSelector.value = DEFAULT_LANGUAGE;
+        handleLanguage(null, DEFAULT_LANGUAGE);
     }
 }
 

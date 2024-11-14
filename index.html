@@ -33,10 +33,25 @@
                         <li class="nav-item mx-0 mx-lg-1 grow-animate-on-hover"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" translatable-text="nav-about">À propos</a></li>
                         <li class="nav-item mx-0 mx-lg-1 grow-animate-on-hover"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" translatable-text="nav-contact">Contact</a></li>
                         <li class="nav-item mx-0 mx-lg-5 justify-content-center">
-                        <select id="language-selector" class="form-select" aria-label="Default select">
-                            <option selected value="fr">Français</option>
-                            <option value="en">English</option>
-                        </select></li>
+                            <!-- Language Selector Dropdown -->
+                            <div class="language-dropdown dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/icons/fr.svg" alt="French flag" class="flag-icon"> Français
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                    <li>
+                                        <a class="dropdown-item language-option" href="#" data-value="fr">
+                                            <img src="assets/icons/fr.svg" alt="French flag" class="flag-icon"> Français
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item language-option" href="#" data-value="en">
+                                            <img src="assets/icons/en.svg" alt="English flag" class="flag-icon"> English
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
