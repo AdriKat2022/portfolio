@@ -1,6 +1,33 @@
 [
     {
         "pinned": "false",
+        "id": "space-shooter-game",
+        "cover_img": "assets/portfolio/space_shooter_game_cover.jpg",
+        "imgs": [
+            "assets/portfolio/space_shooter_game_1.jpg",
+            "assets/portfolio/space_shooter_game_2.jpg",
+            "assets/portfolio/space_shooter_game_3.jpg"
+        ],
+        "technologies": [
+            "Flutter",
+            "Flame",
+            "Dart",
+            "GIT",
+            "CI/CD"
+        ],
+        "actions": [
+            {
+                "type": "LINK-NT",
+                "link": "https://adrikat2022.github.io/test_project/"
+            },
+            {
+                "type": "LINK-NT",
+                "link": "https://github.com/AdriKat2022/test_project"
+            }
+        ]
+    },
+    {
+        "pinned": "false",
         "id": "the-kairi-invasion",
         "cover_img": "assets/portfolio/theKairiInvasionCover.jpg",
         "imgs": [
