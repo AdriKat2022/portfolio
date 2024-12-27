@@ -52,8 +52,15 @@
 
         "contact-subtitle": "Une question dans un domaine particulier comme le jeu vidéo, logiciel ou même tout autre chose ? <br/>N'hésitez pas à me contacter, je serai ravi d'en discuter avec vous !",
 
-        "projects-technologies": "Technologies utilisées",
+        "projects-technologies": "Compétences et technologies utilisées",
         "projects-button-close": "<i class=\"fas fa-xmark fa-fw\"></i>Fermer",
+
+        "project-irma-rnark-title": "Iram Rnark",
+        "project-irma-rnark-date": "Novembre-Decembre 2024",
+        "project-irma-rnark-subtitle": "Prédisez le futur de vos clients en choississant les bonnes cartes",
+        "project-irma-rnark-description-1": "<p>Lors de l'incroyable évènement <strong>Unijam 2024</strong> qui s'est déroulé du 28 novembre au 1er décembre, notre talentueuse équipe a créé <strong>Iram Rnark</strong>—le jeu qui a fièrement remporté le Prix du Public ! Dans cette expérience unique, les joueurs se glissent dans la peau d'Iram Rnark, une voyante sans aucun pouvoir surnaturel, qui s'efforce de prévoir l'avenir de ses clients. À travers des dialogues engageants et des observations aiguisées de personnages excentriques et divertissants, elle sélectionne soigneusement les cartes qu'elle croit révéler leurs futurs récits.</p>",
+        "project-irma-rnark-description-2": "<p><strong>Iram Rnark</strong> a été une expérience très enrichissante pour la construction de l'esprit d'équipe et la collaboration. En tant que développeur principal durant l'évènement, j'ai guidé l'équipe sur le côté codage avec une attitude de soutien et accessible. J'ai fait en sorte que tout le monde contribue non seulement mais se sente également à l'aise avec ce qu'il faisait. J'étais toujours disponible pour aider dès que quelqu'un avait une question ou rencontrait un défi avec les parties techniques ou structurelles du projet.</p><p>Le projet a été mené à bien dans une superbe ambiance, et nous avons tous pris beaucoup de plaisir à travailler dessus ensemble.</p>",
+        "project-irma-rnark-action-button-1": "Jouer/Page du projet (Itch.io)",
 
         "project-space-shooter-game-title": "Space Shooter Game",
         "project-space-shooter-game-date": "Novembre 2024",
@@ -172,8 +179,15 @@
         
         "contact-subtitle": "A question in a particular field such as video games, software or even something else ? <br/>Engage the discussion, I will be happy to discuss it with you !",
         
-        "projects-technologies": "Technologies used",
+        "projects-technologies": "Skills and technologies used",
         "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Close",
+
+        "project-irma-rnark-title": "Iram Rnark",
+        "project-irma-rnark-date": "November-December 2024",
+        "project-irma-rnark-subtitle": "Predict the future of your clients by choosing the right cards",
+        "project-irma-rnark-description-1": "<p>During the amazing <strong>Unijam 2024</strong> event held from November 28th to December 1st, our talented team created <strong>Iram Rnark</strong>—the game that proudly won the Audience Choice Award! In this unique experience, players step into the role of Iram Rnark, a clairvoyant without any supernatural abilities, who strives to foresee her clients' futures. Through engaging dialogues and keen observations of quirky and entertaining characters, she carefully selects the cards she believes will reveal their future stories.</p>",
+        "project-irma-rnark-description-2": "<p><strong>Iram Rnark</strong> was a very valuable experience for building teamwork and collaboration. As the lead developer during the event, I guided the team on the coding side with a supportive and approachable attitude. I made it a priority to ensure that everyone not only contributed but also felt comfortable with what they were doing. I was always available to help whenever someone had a question or faced a challenge with the technical or structural parts of the project.</p><p>The project was completed in a great atmosphere, and we all had a lot of fun working on it together.</p>",
+        "project-irma-rnark-action-button-1": "Play/Project page (Itch.io)",
 
         "project-space-shooter-game-title": "Space Shooter Game",
         "project-space-shooter-game-date": "November 2024",

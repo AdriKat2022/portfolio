@@ -1,5 +1,29 @@
 [
     {
+        "pinned": "true",
+        "id": "irma-rnark",
+        "cover_img": "assets/portfolio/irma-rnark_cover.jpg",
+        "imgs": [
+            "assets/portfolio/irma-rnark_1.jpg",
+            "assets/portfolio/irma-rnark_2.jpg",
+            "assets/portfolio/irma-rnark_3.jpg",
+            "assets/portfolio/irma-rnark_4.jpg"
+        ],
+        "technologies": [
+            "Leadership",
+            "Problem Solving",
+            "Unity",
+            "C#",
+            "GIT"
+        ],
+        "actions": [
+            {
+                "type": "LINK-NT",
+                "link": "https://soldatspectre76.itch.io/irma-rnak"
+            }
+        ]
+    },
+    {
         "pinned": "false",
         "id": "space-shooter-game",
         "cover_img": "assets/portfolio/space_shooter_game_cover.jpg",
@@ -9,6 +33,7 @@
             "assets/portfolio/space_shooter_game_3.jpg"
         ],
         "technologies": [
+            "Encapsulation",
             "Flutter",
             "Flame",
             "Dart",
@@ -82,9 +107,9 @@
             "assets/portfolio/rupture_5.jpg"
         ],
         "technologies": [
-            "UnrealEngine",
+            "Gameplay Programming",
+            "Unreal Engine 5",
             "C++",
-            "Animation Rigging",
             "GIT",
             "GIT LFS"
         ],
@@ -138,10 +163,10 @@
             "assets/portfolio/magicCircus.jpg"
         ],
         "technologies":[
+            "Nav-Mesh",
             "Unity",
             "C#",
-            "GIT",
-            "Nav-Mesh"
+            "GIT"
         ],
         "actions": [
             {
