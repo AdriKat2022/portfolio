@@ -42,7 +42,7 @@ pdfs=$(git diff --cached --name-only --diff-filter=ACM | grep '\.pdf$')
 thumbnails_path=""
 
 if [ -z $pdfs ]; then
-    echo "No new PDFs to generate."
+    echo "No new PDFs to generate. Did you forget to git add them ?"
     exit 0
 else
     thumbnail_count=$(wc -w <<< "$pdfs")
