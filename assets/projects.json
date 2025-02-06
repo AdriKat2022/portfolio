@@ -1,6 +1,30 @@
 [
     {
         "pinned": "true",
+        "id": "sorting-bubble",
+        "cover_img": "assets/portfolio/sorting-bubble_cover.jpg",
+        "imgs": [
+            "assets/portfolio/sorting-bubble_cover_1.jpg",
+            "assets/portfolio/sorting-bubble_cover_2.jpg",
+            "assets/portfolio/sorting-bubble_cover_3.jpg",
+            "assets/portfolio/sorting-bubble_cover_4.jpg"
+        ],
+        "technologies": [
+            "Leadership",
+            "Problem Solving",
+            "Unity",
+            "C#",
+            "GIT"
+        ],
+        "actions": [
+            {
+                "type": "LINK-NT",
+                "link": "https://soldatspectre76.itch.io/irma-rnak"
+            }
+        ]
+    },
+    {
+        "pinned": "false",
         "id": "irma-rnark",
         "cover_img": "assets/portfolio/irma-rnark_cover.jpg",
         "imgs": [
