@@ -210,7 +210,7 @@
   }
 }
 
-@media (max-width: 492px){
+/* @media (max-width: 492px){
   .seeking-box {
       padding: 25px 25px 25px 25px;
   }
@@ -226,9 +226,9 @@
   .seeking-box .type {
       font-size: 15px;
   }
-}
+} */
 
-@media (max-width: 380px){
+@media (max-width: 550px){
   .seeking-box {
     display: flex;
     flex-direction: column;
