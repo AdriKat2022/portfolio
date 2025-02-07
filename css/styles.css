@@ -124,6 +124,11 @@
   background-color: #dadada;
 }
 
+#project-carousel img {
+  border-radius: 0.4rem;
+  margin-bottom: 2.5rem;
+}
+
 .project-technologies {
   display: flex;
   flex-direction: row;
