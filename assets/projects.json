@@ -4,13 +4,14 @@
         "id": "sorting-bubble",
         "cover_img": "assets/portfolio/sorting-bubble_cover.jpg",
         "imgs": [
-            "assets/portfolio/sorting-bubble_cover_1.jpg",
-            "assets/portfolio/sorting-bubble_cover_2.jpg",
-            "assets/portfolio/sorting-bubble_cover_3.jpg",
-            "assets/portfolio/sorting-bubble_cover_4.jpg"
+            "assets/portfolio/sorting-bubble_1.jpg",
+            "assets/portfolio/sorting-bubble_2.jpg",
+            "assets/portfolio/sorting-bubble_3.jpg",
+            "assets/portfolio/sorting-bubble_4.jpg",
+            "assets/portfolio/sorting-bubble_5.jpg"
         ],
         "technologies": [
-            "Leadership",
+            "Tool Programming",
             "Problem Solving",
             "Unity",
             "C#",
@@ -19,7 +20,7 @@
         "actions": [
             {
                 "type": "LINK-NT",
-                "link": "https://soldatspectre76.itch.io/irma-rnak"
+                "link": "https://adrikat-1.itch.io/sorting-bubble"
             }
         ]
     },
