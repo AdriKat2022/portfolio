@@ -124,6 +124,11 @@
   background-color: #dadada;
 }
 
+#project-carousel img {
+  border-radius: 0.4rem;
+  margin-bottom: 2.5rem;
+}
+
 .project-technologies {
   display: flex;
   flex-direction: row;
@@ -210,7 +215,7 @@
   }
 }
 
-@media (max-width: 492px){
+/* @media (max-width: 492px){
   .seeking-box {
       padding: 25px 25px 25px 25px;
   }
@@ -226,9 +231,9 @@
   .seeking-box .type {
       font-size: 15px;
   }
-}
+} */
 
-@media (max-width: 380px){
+@media (max-width: 550px){
   .seeking-box {
     display: flex;
     flex-direction: column;

@@ -17,7 +17,7 @@
 
         "seeking-position-title": "Stage Développeur de Jeux vidéo",
         "seeking-position-subtitle": "Stage de fin d'études (6 mois)",
-        "seeking-date": "À partir du 08 Février 2025",
+        "seeking-date": "Dès que possible en 2025",
         "seeking-locations": "Royaume-Uni, Canada, Irelande, Pays-Bas, Belgique, Roumanie (préféré mais non limité à)",
 
         "cv-button": "Intéressé ? Prenez le raccourci vers mon CV !",
@@ -54,6 +54,13 @@
 
         "projects-technologies": "Compétences et technologies utilisées",
         "projects-button-close": "<i class=\"fas fa-xmark fa-fw\"></i>Fermer",
+
+        "project-sorting-bubble-title": "Sorting Bubble",
+        "project-sorting-bubble-date": "Janvier 2025",
+        "project-sorting-bubble-subtitle": "Vivez l'aventure d'une petite bulle dans l'univers de fonctions de tri déjantés !",
+        "project-sorting-bubble-description-1": "<p>Sorting Bubble a été développé à l'occasion de la <a href=\"https://globalgamejam.org/jam-sites/2025/telecom-sudparis\">Global Game Jam qui s'est déroulé à Télécom SudParis</a> du 24 au 26 Janvier. La particularité de cet évènement est qu'il ait été organisé par nous, des étudiants! Je tiens à remercier de tout coeur <a href=\"https://www.linkedin.com/posts/maxime-sansane_last-week-i-had-the-chance-to-organise-t%C3%A9l%C3%A9com-activity-7289918024784990209-EpaY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD18u4sBa7MoCrgRuDr8SXINMEpywk0Hbmo\" target=\"_blank\">Maxime Sansané</a> pour avoir pris les devants et avoir permit à cet évènement d'exister !</p>",
+        "project-sorting-bubble-description-2": "<p>Sorting Bubble est un jeu puzzle ou votre mission est d'incarner une petite bulle pour trier des nombres à travers des fonctions (des niveaux). Parsemés avec des pièges et outils pour s'en sortir, vous allez devoir trouver une méthode en utilisant différents types de buffers pour passer à travers des obstacles comme des squishers qui ne vous ne laisseront pas passer si vous portez un nombre.</p><p>Nous sommes très satifaits du résultat : même en l'absence d'artiste dans l'équipe, nous avons décidé de prendre un style simple et efficace qui fonctionne très bien pour notre type de jeu.</p><p>J'ai beaucoup apprécié ma contribution sur ce projet : le développement des différents buffers, mais également la mise à disposition de scripts variés pour permettre une édition des levels de plus haut niveau. Cela a permis à d'autres membres de l'équipe et parfois moi-même de pouvoir exercer le job d'un level designer plus aisément. Ce que j'ai également apprécié dans ce projet ont été le développement de scripts d'animations, comme par exemple la recompilation et également la création d'UI comme l'écran de défaite.</p><p>N'hésitez pas à le tester sur itch avec le bouton ci-dessous !</p>",
+        "project-sorting-bubble-action-button-1": "Jouer/Page du projet (Itch.io)",
 
         "project-irma-rnark-title": "Iram Rnark",
         "project-irma-rnark-date": "Novembre-Decembre 2024",
@@ -144,7 +151,7 @@
 
         "seeking-position-title": "Game Developer Internship",
         "seeking-position-subtitle": "End of studies internship (6 months)",
-        "seeking-date": "From February 8th, 2025",
+        "seeking-date": "As soon as possible in 2025",
         "seeking-locations": "United Kingdom, Canada, Ireland, Netherlands, Belgium, Romania (preferred but not limited to)",
 
         "cv-button": "Interested ? Take the shortcut to my resume !",
@@ -181,6 +188,13 @@
         
         "projects-technologies": "Skills and technologies used",
         "projects-button-close":"<i class=\"fas fa-xmark fa-fw\"></i>Close",
+
+        "project-sorting-bubble-title": "Sorting Bubble",
+        "project-sorting-bubble-date": "January 2025",
+        "project-sorting-bubble-subtitle": "Experience the adventure of a small bubble in the universe of crazy sorting functions!",
+        "project-sorting-bubble-description-1": "<p>Sorting Bubble was developed on the occasion of the <a href=\"https://globalgamejam.org/jam-sites/2025/telecom-sudparis\">Global Game Jam that took place at Télécom SudParis</a> from January 24th to 26th. The particularity of this event is that it was organized by us, students! I would like to thank from the bottom of my heart <a href=\"https://www.linkedin.com/posts/maxime-sansane_last-week-i-had-the-chance-to-organise-t%C3%A9l%C3%A9com-activity-7289918024784990209-EpaY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD18u4sBa7MoCrgRuDr8SXINMEpywk0Hbmo\" target=\"_blank\">Maxime Sansané</a> for taking the lead and making this event exist !</p>",
+        "project-sorting-bubble-description-2": "<p>Sorting Bubble is a puzzle game where your mission is to embody a small bubble to sort numbers through functions (levels). Sprinkled with traps and tools to get out of it, you will have to find a method using different types of buffers to pass through obstacles like squishers that won't let you pass if you carry a number.</p><p>We are very satisfied with the result: even in the absence of an artist in the team, we decided to take a simple and effective style that works very well for our type of game.</p><p>I enjoyed my contribution to this project: the development of the different buffers, but also the provision of various scripts to allow higher-level level editing. This allowed other team members and sometimes myself to exercise the job of a level designer more easily. What I also appreciated in this project was the development of animation scripts, such as the recompilation and also the creation of UI like the defeat screen.</p><p>Don't hesitate to check it out with the button below!</p>",
+        "project-sorting-bubble-action-button-1": "Play/Project page (Itch.io)",
 
         "project-irma-rnark-title": "Iram Rnark",
         "project-irma-rnark-date": "November-December 2024",

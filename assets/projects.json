@@ -1,6 +1,31 @@
 [
     {
         "pinned": "true",
+        "id": "sorting-bubble",
+        "cover_img": "assets/portfolio/sorting-bubble_cover.jpg",
+        "imgs": [
+            "assets/portfolio/sorting-bubble_1.jpg",
+            "assets/portfolio/sorting-bubble_2.jpg",
+            "assets/portfolio/sorting-bubble_3.jpg",
+            "assets/portfolio/sorting-bubble_4.jpg",
+            "assets/portfolio/sorting-bubble_5.jpg"
+        ],
+        "technologies": [
+            "Tool Programming",
+            "Problem Solving",
+            "Unity",
+            "C#",
+            "GIT"
+        ],
+        "actions": [
+            {
+                "type": "LINK-NT",
+                "link": "https://adrikat-1.itch.io/sorting-bubble"
+            }
+        ]
+    },
+    {
+        "pinned": "false",
         "id": "irma-rnark",
         "cover_img": "assets/portfolio/irma-rnark_cover.jpg",
         "imgs": [
