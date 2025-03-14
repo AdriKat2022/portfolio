@@ -1,6 +1,32 @@
 [
     {
         "pinned": "true",
+        "id": "medieval-racing",
+        "cover_img": "assets/portfolio/medieval-racing_cover.jpg",
+        "imgs": [
+            "assets/portfolio/medieval-racing_1.jpg",
+            "assets/portfolio/medieval-racing_2.jpg",
+            "assets/portfolio/medieval-racing_3.jpg",
+            "assets/portfolio/medieval-racing_4.jpg",
+            "assets/portfolio/medieval-racing_5.jpg"
+        ],
+        "technologies": [
+            "Mirror Networking",
+            "VM Scripting",
+            "CI/CD with git pipeline",
+            "Unity",
+            "C#",
+            "GIT"
+        ],
+        "actions": [
+            {
+                "type": "LINK-NT",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "pinned": "false",
         "id": "sorting-bubble",
         "cover_img": "assets/portfolio/sorting-bubble_cover.jpg",
         "imgs": [
